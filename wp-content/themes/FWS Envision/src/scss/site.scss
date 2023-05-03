@@ -1,0 +1,104 @@
+/*!
+Theme Name: FWS Starter _S
+Theme URI: https://fws.us/
+Author: Forwardslash
+Author URI: https://fws.us/
+Description: FWS Starter _S Custom WordPress Theme.
+Version: 3.11.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: fws_starter_s
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+
+fws_starter_s is based on FWS Starter _S, (C) Forwardslash, which uses Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc. as it's base.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset and Variables
+# Plugins
+# Helpers
+# Bootstrap
+# WooCommerce
+# Base
+# Main
+# Parts
+# Components / Templates
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset and Variables
+--------------------------------------------------------------*/
+@import 'config/reset';
+@import 'helpers/functions';
+@import 'base/fonts';
+@import 'config/variables';
+@import 'config/icons';
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import '../../node_modules/select2/dist/css/select2';
+@import '../../node_modules/perfect-scrollbar/css/perfect-scrollbar';
+@import '../../node_modules/slick-carousel/slick/slick.scss'; //sass-lint:disable-line clean-import-paths
+
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/print';
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+@import 'woocommerce/tables';
+@import 'woocommerce/products';
+@import 'woocommerce/single-product';
+@import 'woocommerce/checkout';
+@import 'woocommerce/components';
+@import 'woocommerce/widgets';
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import 'base/typography';
+@import 'base/base';
+
+/*--------------------------------------------------------------
+# Parts
+--------------------------------------------------------------*/
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/media';
+@import 'elements/popup';
+@import 'elements/select2';
+@import 'elements/hamburger';
+@import 'elements/posts';
+@import 'elements/perfect-scroll';
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+@import 'main/site-styleguide';
+@import 'main/site-header';
+@import 'main/site-navigation';
+@import 'main/site-footer';
+@import 'main/site-404';
+
+/*--------------------------------------------------------------
+# Components / Templates
+--------------------------------------------------------------*/
+@import 'layout/parts';
+@import 'layout/blocks';
+@import 'layout/listings';
+

@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+	color: $grey;
+	background-color: $white;
+	background-image: linear-gradient(rgba($white, 0), rgba($white, 0));
+	border: 1px solid $grey-mid;
+	border-radius: 3px;
+	display: block;
+	padding: 10px;
+	width: 100%;
+
+	&:invalid {
+		background-color: rgba($red, 0.025);
+	}
+}
+
+input[type='submit'] {
+	border-radius: 3px;
+	border: 1px solid $red;
+	background-color: $red;
+	color: $white;
+
+	@include hover {
+		background-color: $white;
+		color: $red;
+	}
+}
+
+/*--------------------------------------------------------------
+## CF7 Plugin Form
+--------------------------------------------------------------*/
+// Form thank you example
+.cf7-holder { // wrapper that holding form and thank you message popup
+	position: relative;
+
+	> * {
+		position: relative;
+		z-index: 0;
+	}
+
+	.wpcf7 {
+		opacity: 1;
+		transition: $dur $ease;
+	}
+
+	&.form-is-sent {
+		.wpcf7 {
+			opacity: 0;
+		}
+	}
+
+	.wpcf7-mail-sent-ok {
+		display: none !important; //sass-lint:disable-line no-important
+	}
+}
+
+.cf7-holder__popup {
+	//thank you message popup
+	position: absolute;
+	top: 50%;
+	color: $black;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.2);
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	background-color: $white;
+	border-radius: 5px;
+	padding: 35px 30px;
+	text-align: center;
+	width: 100%;
+	max-width: 350px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	transition: $dur $ease;
+
+	.form-is-sent & {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.cf7-holder__popup-img {
+	max-width: 80px;
+	margin: 0 auto 15px;
+}

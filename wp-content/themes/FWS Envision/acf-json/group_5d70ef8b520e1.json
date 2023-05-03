@@ -1,0 +1,144 @@
+{
+    "key": "group_5d70ef8b520e1",
+    "title": "RE Background Image",
+    "fields": [
+        {
+            "key": "field_5f1013f96335d",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<b>Background Image<\/b>\r\nSet background image and text color. Make sure to upload all three image sizes for best page performance on mobile devices.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5d70efe5eb989",
+            "label": "Text Color",
+            "name": "text_color",
+            "type": "true_false",
+            "instructions": "If you have a darker image, you can toggle this option to get a different text color.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "White Text",
+            "ui_off_text": "Black Text"
+        },
+        {
+            "key": "field_5d70efe9eb98b",
+            "label": "Desktop Image",
+            "name": "desktop_image",
+            "type": "image",
+            "instructions": "Recommended image width should be no more then 2000px.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "28",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d70efebeb98c",
+            "label": "Tablet Image",
+            "name": "tablet_image",
+            "type": "image",
+            "instructions": "Recommended image width should be no more then 1024px.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "28",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d70efedeb98d",
+            "label": "Mobile Image",
+            "name": "mobile_image",
+            "type": "image",
+            "instructions": "Recommended image width should be no more then 640px.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "28",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "show_in_graphql": 0,
+    "graphql_field_name": "reSectionBackground",
+    "acf-field-group-category": [
+        {
+            "slug": "reusable-elements",
+            "name": "Reusable Elements"
+        }
+    ],
+    "modified": 1594889333
+}

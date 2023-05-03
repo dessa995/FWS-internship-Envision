@@ -1,0 +1,1455 @@
+body {
+	&.login {
+		background-color: $white;
+		height: 100vh;
+		max-height: 100vh;
+		overflow: hidden;
+	}
+}
+
+.fws-login-title {
+	font-family: $font-main;
+	color: $black-smooth;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 38.4px;
+	margin-bottom: 63px;
+	display: block !important; // sass-lint:disable-line no-important
+
+	@include mq($xl) {
+		text-align: center;
+	}
+
+	@include mq(768px) {
+		font-size: 30px;
+	}
+
+	@include mq(640px) {
+		margin-bottom: 20px;
+		font-size: 25px;
+		letter-spacing: 0;
+	}
+
+	@include mq(400px) {
+		font-size: 24px;
+	}
+}
+
+.fws-login-illustration {
+	position: absolute;
+	top: 4.5%;
+	right: 0;
+	width: 100%;
+	max-width: 1067px;
+
+	@include mq($desk-small) {
+		max-width: 980px;
+	}
+
+	@include mq(1500px) {
+		max-width: 730px;
+		top: 22.5%;
+	}
+
+	@include mq(1350px) {
+		max-width: 670px;
+	}
+
+	@include mq($xl) {
+		max-width: initial;
+		width: 100%;
+		top: 80%;
+
+		img {
+			display: none;
+		}
+	}
+
+	@include mq($lg) {
+		top: 90%;
+	}
+
+	@include mq(640px) {
+		top: 93%;
+	}
+}
+
+.login #backtoblog {
+	padding: 0;
+}
+
+#backtoblog {
+	margin-top: 30px;
+
+	@include mq($xl) {
+		max-width: 540px;
+		width: 100%;
+		text-align: center;
+		margin: 15px auto 0;
+	}
+}
+
+.login #login_error,
+.login .message,
+.login .success {
+	width: 30.6%;
+	border-left: 4px solid $orange;
+
+	@include mq(1500px) {
+		width: 40%;
+	}
+
+	@include mq($xl) {
+		width: 90%;
+		max-width: 510px;
+		margin: 0 auto 20px;
+	}
+}
+
+#login_error {
+
+	strong {
+		display: inline-block;
+		color: $orange;
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+#login form p.submit {
+	padding: 0;
+	margin: 0;
+}
+
+#login form p {
+
+	&.forgetmenot {
+		margin: 15px 0 20px;
+
+		@include mq($xl) {
+			// margin: 0 0 20px;
+			// margin: 0 auto;
+			// width: initial;
+			margin-right: auto;
+		}
+
+		// @include mq($md) {
+		// 	width: initial;
+		// }
+
+		// @include mq(640px) {
+		// 	margin: 0 auto;
+		// }
+
+		@include mq(400px) {
+			margin: 0 auto 10px;
+		}
+	}
+
+	@include mq(640px) {
+		width: 100%;
+	}
+}
+
+#login p.submit:not(.reset-pass-submit) {
+	min-height: 60px;
+	position: relative;
+	display: flex;
+	width: 100%;
+
+	.btn-icon-login {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 20px;
+		pointer-events: none;
+
+		@include mq(640px) {
+			top: 44%;
+		}
+
+		svg {
+			color: $white;
+			font-size: 30px;
+			transition: $dur $ease;
+		}
+	}
+
+	@include hover {
+
+		svg {
+			color: $orange;
+			transition: $dur $ease;
+		}
+	}
+
+	@include mq(640px) {
+		max-width: 100%;
+	}
+}
+
+#lostpasswordform {
+	border: none;
+	box-shadow: none;
+	padding: 0;
+
+	input[type='submit'] {
+		@include mq($xl) {
+			max-width: initial;
+		}
+	}
+
+	#user_login,
+	#user_pass {
+		border: 2px solid $grey-soft;
+		border-radius: 6px;
+		min-height: 60px;
+		width: 100%;
+		background-color: $white;
+		font-family: $font-main;
+		color: $black-smooth;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+		line-height: 21.6px;
+		transition: $dur $ease;
+		padding: 20px 20px 15px 30px;
+
+		&:focus {
+			border: 2px solid $orange;
+			outline: none;
+			box-shadow: none;
+		}
+
+		@include mq(640px) {
+			padding: 20px 20px 15px 30px;
+			min-height: 50px;
+		}
+
+		@include mq(400px) {
+			min-height: 45px;
+			padding: 15px 20px 15px 30px;
+		}
+	}
+}
+
+#loginform {
+	#user_login,
+	#user_pass {
+		border: 2px solid $grey-soft;
+		border-radius: 6px;
+		min-height: 60px;
+		width: 100%;
+		background-color: $white;
+		font-family: $font-main;
+		color: $black-smooth;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+		line-height: 21.6px;
+		transition: $dur $ease;
+		padding: 20px 20px 15px 30px;
+
+		&:focus {
+			border: 2px solid $orange;
+			outline: none;
+			box-shadow: none;
+		}
+
+		@include mq(640px) {
+			padding: 20px 20px 15px 30px;
+			min-height: 50px;
+		}
+
+		@include mq(400px) {
+			min-height: 45px;
+			padding: 15px 20px 15px 30px;
+		}
+	}
+
+	@include mq(640px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.login {
+	padding-top: 54px;
+
+	@include mq(992px) {
+		padding-top: 15px;
+	}
+}
+
+.fws-login-wrapper {
+	width: 100%;
+	max-width: 1750px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+
+	@include mq($xl) {
+		max-width: 950px;
+	}
+
+	#jetpack-sso-wrap__action {
+		a {
+			outline: none;
+			border: 2px solid $orange;
+			transition: 350ms ease;
+			border-color: $orange;
+			width: 100%;
+			max-width: 434px;
+			border-radius: 6px;
+			background: $orange;
+			min-height: 60px;
+			text-align: center;
+			color: $white;
+			font-size: 17px;
+			font-weight: 600;
+			font-family: $font-main;
+			line-height: 21.6px;
+			letter-spacing: 0.1px;
+			padding: 17px 28px 13px 27px;
+			float: none;
+
+			@include hover {
+				outline: none;
+				background-color: $white;
+				background: $white;
+				color: $orange;
+				border: 2px solid $orange;
+				transition: $dur $ease;
+				border-color: $orange;
+			}
+
+			&::after {
+				display: none;
+			}
+
+			&:focus {
+				outline: none;
+				background-color: $white;
+				background: $white;
+				color: $orange;
+				border: 2px solid $orange;
+				transition: $dur $ease;
+				border-color: $orange;
+			}
+
+			@include mq($sm) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.submit {
+		.button {
+			width: 100%;
+			max-width: 100%;
+			border-radius: 6px;
+			background: $orange;
+			min-height: 60px;
+			text-align: left;
+			border: 2px solid $orange;
+			border-color: $orange;
+			color: $white;
+			font-size: 17px;
+			font-weight: 600;
+			font-family: $font-main;
+			line-height: 21.6px;
+			letter-spacing: 0.1px;
+			outline: none;
+			transition: $dur $ease;
+			padding: 17px 28px 13px 27px;
+			float: none;
+
+			@include hover {
+				outline: none;
+				background-color: $white;
+				background: $white;
+				color: $orange;
+				border: 2px solid $orange;
+				transition: $dur $ease;
+				border-color: $orange;
+			}
+
+			&:focus {
+				box-shadow: none;
+			}
+
+			@include mq(1500px) {
+				max-width: initial;
+			}
+
+			@include mq(640px) {
+				min-height: 50px;
+				padding: 7px 15px;
+				font-size: 16px;
+				max-width: 100%;
+				margin: 0 auto 6px;
+			}
+		}
+	}
+
+	@include mq(640px) {
+		padding-bottom: 40px;
+	}
+}
+
+.fws-login-brand {
+	display: block;
+	max-width: 140px;
+	margin: 0 0 40px 5px;
+
+	@include mq(1199px) {
+		max-width: 140px;
+		margin: 20px auto;
+	}
+
+	@include mq(640px) {
+		max-width: 100px;
+		margin: 10px auto;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+#login {
+	width: 100%;
+	padding: 0 8.8% 30px;
+	min-height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	overflow: hidden;
+
+	#resetpassform {
+
+		.dashicons {
+			top: 12px;
+
+			@include mq(400px) {
+				top: 9px;
+			}
+		}
+	}
+
+	.reset-pass-submit {
+		position: relative;
+
+		button {
+			position: relative;
+			background-color: $white;
+			color: $orange;
+			padding: 10px 28px;
+	
+			@include hover {
+				background-color: $orange;
+				color: $white;
+			}
+		}
+
+		.btn-icon-login {
+			position: absolute;
+			bottom: 21px;
+			right: 20px;
+			top: auto !important; // sass-lint:disable-line no-important
+			pointer-events: none;
+	
+			svg {
+				color: $white;
+				font-size: 30px;
+				transition: $dur $ease;
+			}
+
+			@include mq(640px) {
+				bottom: 16px;
+			}
+		}
+
+		.second-icon {
+			top: 15px !important; // sass-lint:disable-line no-important
+    		bottom: auto;
+
+			svg {
+				color: $orange;
+			}
+
+			@include mq(640px) {
+				top: 9px !important; // sass-lint:disable-line no-important
+			}
+		}
+	
+		input {
+			padding: 10px 28px;
+		}
+	}
+
+	@include mq(1199px) {
+		padding: 0;
+	}
+
+	@include mq(640px) {
+		min-height: 330px;
+		width: initial;
+		padding: 0 15px;
+	}
+
+	::-webkit-input-placeholder, //sass-lint:disable-line no-vendor-prefixes
+	:-ms-input-placeholder, //sass-lint:disable-line no-vendor-prefixes
+	::placeholder {
+		color: $grey-mild;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.09px;
+		line-height: 21.6px;
+		opacity: 1;
+	}
+
+	> h1,
+	label[for='user_login'],
+	label[for='user_pass'] {
+		display: none;
+	}
+
+	a {
+		color: $orange;
+		position: relative;
+		font-weight: 700;
+		letter-spacing: 0.1px;
+		text-decoration: none;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 1px;
+			left: 0;
+			bottom: 2px;
+			background-color: $orange;
+			transition: $dur $ease;
+		}
+
+		&:focus {
+			box-shadow: none;
+			color: $orange;
+		}
+
+		@include hover {
+
+			&::after {
+				width: 0;
+				transition: $dur $ease;
+				background-color: $white;
+			}
+		}
+
+		&.login_error-lost-pass {
+			margin-left: 3px;
+		}
+	}
+
+	.login-title {
+		display: none;
+	}
+}
+
+#login form {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 0;
+	box-shadow: none;
+
+	@include mq($xl) {
+		margin: 0 auto;
+	}
+
+	@include mq(640px) {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.login #backtoblog a {
+	color: $orange;
+	position: relative;
+	font-weight: 700;
+
+	&::after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 1px;
+		left: 0;
+		bottom: 2px;
+		background-color: $orange;
+		transition: $dur $ease;
+	}
+
+	&:focus {
+		box-shadow: none;
+		color: $orange;
+	}
+
+	@include hover {
+		color: $orange;
+
+		&::after {
+			width: 0;
+			transition: $dur $ease;
+			background-color: $white;
+		}
+	}
+}
+
+.fws-login-footer__text {
+	font-weight: 400;
+	font-family: $font-main;
+	letter-spacing: 0.4px;
+	margin-right: 5px;
+}
+
+.login #backtoblog a,
+.fws-login-footer  {
+	font-size: 18px;
+	letter-spacing: 0.1px;
+	text-decoration: none;
+
+	@include mq(400px) {
+		font-size: 16px;
+	}
+}
+
+.fws-login-footer {
+
+	@include mq(460px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.login #nav {
+	position: relative;
+	//float: right;
+	margin: 5px 0 20px;
+	padding: 0;
+
+	a {
+		position: absolute;
+		top: 13px;
+		right: 4px;
+		color: $orange;
+		margin-left: 0;
+		font-size: 19px;
+		outline: none;
+
+		@include mq($xl) {
+			top: -59px;
+		}
+
+		@include mq(768px) {
+			font-size: 18px;
+		}
+
+		@include mq(400px) {
+			position: relative;
+			top: auto;
+			right: auto;
+		}
+
+		&:focus {
+			box-shadow: none;
+			color: $orange;
+		}
+
+		@include hover {
+			color: $orange;
+
+			&::after {
+				width: 0;
+				transition: $dur $ease;
+				background-color: $white;
+			}
+		}
+	}
+
+	@include mq(1199px) {
+		// max-width: 540px;
+		// margin: 0 auto;
+		// float: right;
+		right: 0;
+		text-align: center;
+		margin: 0 0 15px;
+		position: relative;
+	}
+
+	// @include mq(640px) {
+	// 	position: absolute;
+	// 	right: 3%;
+	// 	top: 58%;
+	// }
+
+	// @include mq($sm) {
+	// 	top: 57%;
+	// }
+
+	@include mq(640px) {
+		right: 0;
+		text-align: center;
+		margin: 0 0 15px;
+		position: relative;
+	}
+}
+
+.user-pass-wrap {
+	margin-bottom: 17px;
+
+	span {
+		transition: $dur $ease;
+	}
+
+	@include mq(640px) {
+		width: 100%;
+	}
+
+	@include mq($sm) {
+		margin-bottom: 0;
+	}
+
+	@include mq(400px) {
+		margin-bottom: 5px;
+	}
+}
+
+.login .button.wp-hide-pw .dashicons {
+	font-size: 23px;
+}
+
+.login .button.wp-hide-pw {
+	right: 20px;
+	top: 8px;
+	outline: none;
+	color: $grey-mild;
+
+	&:focus {
+		outline: none;
+		border: none;
+		box-shadow: none;
+
+	}
+
+	@include hover {
+
+		span {
+			color: $orange;
+			transition: $dur $ease;
+		}
+	}
+
+	@include mq(400px) {
+		top: 4px;
+	}
+}
+
+#loginform,
+#lostpasswordform,
+#resetpassform {
+	width: 30.6%;
+
+	input[type='text'] {
+		margin-bottom: 30px;
+
+		@include mq(640px) {
+			margin-bottom: 15px;
+		}
+
+		&.hide-if-no-js {
+			margin-bottom: 0;
+			padding-right: 60px;
+		}
+	}
+
+	@include mq(1500px) {
+		width: 40%;
+	}
+
+	@include mq($xl) {
+		width: 100%;
+		max-width: 540px;
+	}
+}
+
+#resetpassform {
+	.button.wp-hide-pw {
+		top: 0 !important; //sass-lint:disable-line no-important
+	}
+
+	.wp-pwd {
+		max-height: initial !important; //sass-lint:disable-line no-important
+		
+		input {
+			border: 2px solid $grey-soft;
+			border-radius: 6px;
+			min-height: 60px;
+			width: 100%;
+			background-color: $white;
+			font-family: $font-main;
+			color: $black-smooth;
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 0.6px;
+			line-height: 21.6px;
+			transition: $dur $ease;
+			padding: 20px 20px 15px 30px;
+
+			&:focus {
+				border: 2px solid $orange;
+				outline: none;
+				box-shadow: none;
+			}
+
+			@include mq(640px) {
+				padding: 20px 20px 15px 30px;
+				min-height: 50px;
+			}
+
+			@include mq(400px) {
+				min-height: 45px;
+				padding: 15px 20px 15px 30px;
+			}
+		}
+	}
+}
+
+.wp-pwd {
+	max-height: 76px;
+}
+
+#lostpasswordform + #nav {
+	float: none;
+	margin: 25px 0 30px;
+
+	a {
+		margin-left: 0;
+	}
+
+	@include mq($xl) {
+		max-width: 540px;
+		width: 100%;
+		margin: 25px auto 0;
+	}
+}
+
+.login-action-lostpassword p.submit {
+
+	@include mq(400px) {
+		max-width: initial;
+
+	}
+}
+
+.login-action-lostpassword {
+
+	.fws-footer-author {
+
+		@include mq(1500px) {
+			bottom: -34%;
+		}
+	}
+}
+
+.fws-footer-author {
+	text-align: right;
+	// padding-right: 100px;
+	position: absolute;
+	right: 5px;
+	bottom: -30px;
+	// padding-bottom: 20px;
+
+	@include mq($desk-small) {
+		bottom: -90px;
+	}
+
+	@include mq(1500px) {
+		bottom: -120px;
+	}
+
+	@include mq(1350px) {
+		bottom: -160px;
+	}
+
+	@include mq($xl) {
+		margin: 70px 40px 30px;
+		padding-right: 0;
+		position: relative;
+		bottom: auto;
+		text-align: center;
+	}
+
+	@include mq(992px) {
+		/* margin: 50px 40px 30px; */
+		padding-right: 0;
+		max-width: 570px;
+		margin: 10px auto 0;
+	}
+
+	span {
+		font-size: 18px;
+		font-family: $font-main;
+		letter-spacing: 0.6px;
+		line-height: 21.6px;
+		font-weight: 400;
+		color: $grey-thin;
+	}
+
+	a {
+		color: $orange;
+		position: relative;
+		font-weight: 700;
+		letter-spacing: 0.1px;
+		text-decoration: none;
+		margin-left: -1px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 1px;
+			left: 0;
+			bottom: 2px;
+			background-color: $orange;
+			transition: $dur $ease;
+		}
+
+		&:focus {
+			box-shadow: none;
+			color: $orange;
+		}
+
+		@include hover {
+
+			&::after {
+				width: 0;
+				transition: $dur $ease;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+#login form .forgetmenot {
+	position: relative;
+	user-select: none;
+	width: 100%;
+
+	// @include mq(640px) {
+	// 	align-self: baseline;
+	// }
+
+	@include mq($xl) {
+		float: none;
+		max-width: 180px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: none;
+	}
+
+	input {
+		display: none;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	label {
+		font-family: $font-main;
+		color: $black-smooth;
+		font-size: 19px;
+		font-weight: 400;
+		letter-spacing: 0.09px;
+		margin-bottom: 0;
+		transform: translateY(1px);
+		width: 174px;
+		text-align: right;
+		cursor: pointer;
+	}
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 27px;
+	width: 27px;
+	background-color: $white;
+	border: 2px solid $grey-soft;
+	border-radius: 2px;
+	pointer-events: none;
+
+	&::after {
+		content: '';
+		position: absolute;
+		opacity: 0;
+		background-color: $white;
+		transition: $dur $ease;
+	}
+}
+
+.login form .forgetmenot .checkmark::after {
+	@include center;
+    width: 16px;
+    height: 16px;
+	background-color: $orange;
+	opacity: 0;
+	transition: $dur $ease;
+}
+
+.login form .forgetmenot input:checked ~ .checkmark {
+	background-color: $white;
+}
+
+.login form .forgetmenot input:checked ~ .checkmark::after {
+	opacity: 1;
+	transition: $dur $ease;
+}
+
+//Dashboard login
+.interim-login {
+
+	.fws-footer-author {
+		padding-bottom: 0;
+	}
+
+	.fws-login-title {
+		@include mq(400px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	.fws-login-brand {
+		margin-top: 20px;
+	}
+
+	.fws-login-illustration {
+		display: none;
+	}
+
+	#login form p.submit {
+		justify-content: center;
+		max-width: 200px;
+	}
+
+	.wp-core-ui .button.button-large {
+		max-width: 200px;
+	}
+
+	#login form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.login form .forgetmenot {
+		margin-bottom: 15px;
+	}
+}
+
+.interim-login #login_error,
+.interim-login.login .message {
+	max-width: 294px;
+
+	@include mq($xl) {
+		margin: 0 auto 12px;
+	}
+}
+
+//login-action-checkemail
+.login-action-checkemail {
+
+	.fws-footer-author {
+
+		@include mq(1350px) {
+			bottom: -15%;
+		}
+	}
+
+	#login a {
+		margin-left: 3px;
+
+		&::after {
+			bottom: -1px;
+		}
+	}
+
+	.login #login_error {
+
+		a {
+			margin-left: 3px;
+		}
+	}
+
+	.fws-login-illustration {
+
+		@include mq(350px) {
+			display: none;
+		}
+	}
+
+	// #login {
+	// 	padding: 0 8.8% 310px;
+
+	// 	@include mq($xl) {
+	// 		padding: 0 8.8% 30px;
+	// 	}
+
+	// 	@include mq($sm) {
+	// 		padding: 0 8.8%;
+	// 	}
+	// }
+}
+
+.login-action-rp {
+
+	#login p.submit .btn-icon-login {
+		top: 25%;
+	}
+
+	#login #nav a {
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+}
+
+.login h1 {
+	text-align: left;
+
+	@include mq(1199px) {
+		text-align: center;
+		margin-bottom: 25px;
+		font-size: 30px;
+	}
+
+	@include mq(768px) {
+		font-size: 26px;
+	}
+
+	@include mq(640px) {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+}
+
+.login-action-confirm_admin_email {
+
+	h1.admin-email__heading {
+
+		@include mq(640px) {
+			text-align: center;
+		}
+	}
+
+	#backtoblog {
+
+		@include mq(640px) {
+			margin-top: 15px;
+		}
+	}
+	
+	#login {
+		width: 100%;
+		padding: 0 8.8% 30px;
+		margin-top: 0;
+		max-width: initial;
+	}
+
+	.admin-email-confirm-form {
+		width: 30.6%;
+
+		@include mq(1500px) {
+			width: 40%;
+		}
+
+		@include mq($xl) {
+			width: 100%;
+			max-width: 540px;		
+		}
+
+		@include mq(640px) {
+			text-align: center;
+		}
+	}
+
+	.fws-login-illustration {
+
+		@include mq(640px) {
+			top: 97%;
+		}
+	}
+
+	input[type='submit'],
+	.button-large {
+		width: 100%;
+		max-width: 434px;
+		border-radius: 6px;
+		background: $orange;
+		min-height: 80px;
+		text-align: left;
+		border: 2px solid $orange;
+		border-color: $orange;
+		color: $white;
+		font-size: 20px;
+		font-weight: 600;
+		font-family: $font-main;
+		line-height: 21.6px;
+		letter-spacing: 0.1px;
+		outline: none;
+		transition: $dur $ease;
+		padding: 17px 28px 13px 27px !important;//sass-lint:disable-line no-important
+		float: none;
+		margin-left: 0 !important;//sass-lint:disable-line no-important
+		margin-right: 0 !important;//sass-lint:disable-line no-important
+
+		@include mq(640px) {
+			padding: 7px 28px 7px 27px !important;//sass-lint:disable-line no-important
+		}
+
+		&::after {
+			display: none;
+		}
+
+		@include hover {
+			outline: none;
+			background-color: $white;
+			background: $white;
+			color: $orange;
+			border: 2px solid $orange;
+			transition: $dur $ease;
+			border-color: $orange;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			outline: none;
+			background-color: $white !important;//sass-lint:disable-line no-important
+			background: $white !important;//sass-lint:disable-line no-important
+			border-color: $orange;
+			color: $orange !important;//sass-lint:disable-line no-important
+			box-shadow: none;
+		}
+	}
+
+	.button-large {
+		margin-bottom: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.btn-icon-login {
+		font-size: 30px;
+	}
+
+	.button {
+		color: $white !important;//sass-lint:disable-line no-important
+		
+		@include hover {
+			color: $orange !important;//sass-lint:disable-line no-important
+		}
+	}
+}
+
+.login-action-login {
+
+	#wfls-prompt-overlay {
+		padding: 0;
+	}
+
+	#wfls-prompt-wrapper {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background-color: $white;
+			bottom: -110px;
+			left: -1px;
+			width: 101%;
+			height: 90px;
+			z-index: 99;
+			opacity: 1;
+			border: 10px solid $white;
+		}
+
+		label {
+			color: $grey-thin;
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+			line-height: 38.4px;
+			margin-bottom: 3px;
+		}
+
+		#wfls-token {
+			border: 2px solid $grey-soft;
+			border-radius: 6px;
+			min-height: 60px;
+			width: 100%;
+			background-color: $white;
+			font-family: $font-main;
+			color: $black-smooth;
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 0.6px;
+			line-height: 21.6px;
+			transition: $dur $ease;
+			padding: 20px 20px 15px 30px;
+
+			&:focus {
+				border: 2px solid $orange;
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.jetpack-sso-form-display {
+	#loginform {
+		padding: 26px 0 !important;//sass-lint:disable-line no-important
+		max-width: 430px !important;//sass-lint:disable-line no-important
+	}
+}
+
+
+.jetpack-sso-toggle {
+	outline: none;
+	border: 2px solid $orange;
+	transition: 350ms ease;
+	border-color: $orange;
+	width: 100%;
+	max-width: 434px;
+	border-radius: 6px;
+	background: $orange;
+	min-height: 60px;
+	text-align: left;
+	color: $white !important;//sass-lint:disable-line no-important
+	font-size: 17px;
+	font-weight: 600;
+	font-family: $font-main;
+	line-height: 21.6px;
+	letter-spacing: 0.1px;
+	padding: 18px 28px 13px 27px;
+	float: none;
+
+	@include hover {
+		outline: none;
+		background-color: $white;
+		background: $white;
+		color: $orange !important;//sass-lint:disable-line no-important
+		border: 2px solid $orange;
+		transition: $dur $ease;
+		border-color: $orange;
+	}
+
+	&::after {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+		background-color: $white;
+		background: $white;
+		color: $orange !important;//sass-lint:disable-line no-important
+		border: 2px solid $orange;
+		transition: $dur $ease;
+		border-color: $orange;
+	}
+}
+
+#jetpack-sso-wrap {
+	.jetpack-sso-toggle.default {
+		max-width: initial;
+
+		@include mq(640px) {
+			min-height: 50px;
+			padding: 17px 28px 13px 27px;
+			max-width: 350px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.jetpack-sso-clear {
+
+	@include mq(640px) {
+		width: 100%;
+		/* max-width: 350px; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.privacy-policy-page-link {
+	display: none;
+}
+
+.message.reset-pass {
+	position: relative;
+
+	a {
+		position: absolute !important; // sass-lint:disable-line no-important
+		bottom: -42px;
+		left: -5px;
+		font-size: 20px;
+
+		@include mq($xl) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	@include mq($xl) {
+		margin-bottom: 50px;
+	}
+}
+
+#wp-auth-check {
+	padding: 30px 15px 0 !important; // sass-lint:disable-line no-important
+	background-color: $white !important; // sass-lint:disable-line no-important
+
+	@include mq(640px) {
+		transform: translateX(10px);
+		max-width: 330px;
+	}
+
+	@include mq(380px) {
+		left: 50% !important; // sass-lint:disable-line no-important
+		width: 270px !important; // sass-lint:disable-line no-important
+		transform: translateX(-50%);
+	}
+}

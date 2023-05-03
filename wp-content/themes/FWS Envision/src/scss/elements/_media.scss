@@ -1,0 +1,169 @@
+/*--------------------------------------------------------------
+## Cover Image
+--------------------------------------------------------------*/
+// For cover image, parent element must have position rule and overflow set to hidden
+.cover-img {
+	min-width: 1000%;
+	min-height: 1000%;
+	max-width: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1001);
+	transition: $dur $ease;
+}
+
+/*--------------------------------------------------------------
+## Wrapper and Ratios
+--------------------------------------------------------------*/
+.media-wrap {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+	}
+}
+
+// modifier size classes
+// formula for calculating padding percentage:
+// (height / width * 100) = padding-top: %;
+.media-wrap--square::before {
+	padding-top: 100%;
+}
+
+.media-wrap--400x280::before {
+	padding-top: 70%;
+}
+
+// modifier for lazy loading
+.media-wrap--lazy-loader {
+	background: $grey-light;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: $grey-light;
+		margin-top: -20px;
+		animation: lazyPreloading 800ms ease infinite;
+		transition: calc($dur / 2) $ease;
+		@include center;
+	}
+
+	&.is-hidden::after {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+// item
+.media-item {
+	display: block;
+}
+
+// lazy preloading animation
+$l-light: rgba($white, .6);
+$l-dark: rgba($grey-mid, .2);
+$l-bkg: $grey-light;
+
+@keyframes lazyPreloading {
+	0%, 100% {
+		box-shadow: -13px 20px $l-dark, 13px 20px 0 $l-light, 13px 46px 0 $l-light, -13px 46px 0 $l-light, 0 0 0 1000em $l-bkg;
+	}
+	25% {
+		box-shadow: -13px 20px 0 $l-light, 13px 20px $l-dark, 13px 46px 0 $l-light, -13px 46px 0 $l-light, 0 0 0 1000em $l-bkg;
+	}
+	50% {
+		box-shadow: -13px 20px 0 $l-light, 13px 20px 0 $l-light, 13px 46px $l-dark, -13px 46px 0 $l-light, 0 0 0 1000em $l-bkg;
+	}
+	75% {
+		box-shadow: -13px 20px 0 $l-light, 13px 20px 0 $l-light, 13px 46px 0 $l-light, -13px 46px $l-dark, 0 0 0 1000em $l-bkg;
+	}
+}
+
+/*--------------------------------------------------------------
+## SVG Icons
+--------------------------------------------------------------*/
+.svg-icon {
+	display: inline-flex;
+	line-height: 1;
+
+	svg {
+		width: 1em;
+	}
+}
+
+/*--------------------------------------------------------------
+## WP Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+
+	.wp-caption-text {
+		margin: 0.8075em 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+
+	// Loops to enumerate the classes for gallery columns.
+	@for $i from 2 through 9 {
+		.gallery-columns-#{$i} & {
+			max-width: calc(100% / $i);
+		}
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: initial;
+}

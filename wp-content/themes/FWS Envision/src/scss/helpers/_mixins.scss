@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+## Mixins
+--------------------------------------------------------------*/
+
+/*
+Media Query
+Example:
+
+@include mq($sm) 			 		Will render: @media screen and (max-width: 575px)
+@include mq(991px) 			 	 	Will render: @media screen and (max-width: 991px)
+@include mq($sm + 1, min) 	 		Will render: @media screen and (min-width: 576px)
+@include mq(992px, min) 			Will render: @media screen and (min-width: 992px)
+@include mq(400, min, height) 	 	Will render: @media screen and (min-height: 400px)
+@include mq(992px) {				Will render: @media screen and (max-width: 992px) and (min-width: 767px)
+	@include mq(767px, min) {
+
+	}
+}
+ */
+@mixin mq($value, $constraint: max, $feature: width) {
+	@media screen and (#{$constraint}-#{$feature}: $value) {
+		@content;
+	}
+}
+
+/*
+Insert SVG Icon DataUri as Background
+The mixing takes three arguments:
+
+First argument is a name of a file.
+Second argument is a color of an icon.
+Third argument is whether psuedo element should be `::before` or `::after`. The default value is `::before`.
+
+Example:
+
+@include svg-icon-data(ico-happy, $red, after);
+
+
+Will render:
+&::after {
+	...
+	background: url("data:image/svg+xml...") no-repeat center
+	...
+}
+ */
+@mixin svg-icon-data($icon, $color, $insert: before) {
+	&::#{$insert} {
+		content: '';
+		display: inline-block;
+		font-size: 1em;
+		width: 1em;
+		height: 1em;
+		background: svg-load(svgPath($icon), fill=$color) no-repeat center;
+		background-size: contain;
+	}
+}
+
+
+// Vertical / Horizontal center
+@mixin center($direction: xy, $position: absolute) {
+	position: $position;
+	@if ($direction == 'y') {
+		top: 50%;
+		transform: translateY(-50%);
+	} @else if ($direction == 'x') {
+		left: 50%;
+		transform: translateX(-50%);
+	} @else {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+// Clearfix
+@mixin clearfix() {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Text Overflow
+@mixin text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Font Smoothing
+@mixin font-smoothing($val: antialiased) {
+	-webkit-font-smoothing: $val;
+	-moz-font-smoothing: $val;
+	-ms-font-smoothing: $val;
+	-o-font-smoothing: $val;
+}
+
+// Input Placeholder
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-ms-input-placeholder {
+		@content;
+	}
+}
+
+// Hover mixin only for desktop devices
+// to include use @include hover {your hover styles} can also include elements
+@mixin hover {
+	@media only screen and (min-width: $lap-small) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+// Style element, based on how many siblings it has.
+@mixin with-count($n) {
+	@if $n == 1 {
+		&:first-child:nth-last-child(1) {
+			@content;
+		}
+	} @else {
+		&:first-child:nth-last-child(#{$n}),
+		&:first-child:nth-last-child(#{$n}) ~ & {
+			@content;
+		}
+	}
+}
+
+// Style scrollbar with this mixin.
+// Make sure to give width of a bar in vw, not px.
+
+@mixin scroll-style($thumb-color: #777, $track-color: #faf9f7, $radius: 0, $width: 0.6vw) {
+    /* stylelint-disable */
+	scrollbar-width: thin;
+	scrollbar-color: $thumb-color $track-color;
+
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $thumb-color;
+		border-radius: $radius;
+		border: 1px solid $track-color;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: $track-color;
+	}
+    /* stylelint-enable */
+	@content;
+}
+
+// Browser support mixin.
+// Just pass the name of browser as parameter. Naming can be seen bellow.
+@mixin browser-support($name) {
+
+	//Internet explorer specific css
+	@if($name == 'ie') {
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			@content;
+		}
+	}
+	//Firefox specific css
+	@else if($name == 'firefox') {
+		@-moz-document url-prefix() {
+			@content;
+		  }
+	}
+    //Safari specific css
+	@else if($name == 'safari') {
+		@media not all and (min-resolution:.001dpcm)
+		{ @supports (-webkit-appearance:none) {
+			@content;
+		}}
+	}
+	//iOS specific css
+	@else if($name == 'ios') {
+		@supports (-webkit-touch-callout: none) {
+			@content;
+		  }
+	}
+	//Edge specific css
+	@else if($name == 'edge') {
+		@supports (-ms-ime-align: auto) {
+			@content;
+		  }
+	}
+}

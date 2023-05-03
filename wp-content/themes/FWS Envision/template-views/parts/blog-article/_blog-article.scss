@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+## blog-article
+--------------------------------------------------------------*/
+.blog-article {
+	margin-bottom: 30px;
+}
+
+.blog-article__thumb-wrap {
+	display: block;
+	overflow: hidden;
+}
+
+.blog-article__thumb {
+	transition: $dur $ease;
+
+	@include hover {
+		transform: scale(1.1);
+	}
+}
+
+.blog-article__box {
+	background: $grey-light;
+	padding: 20px;
+}
+
+.blog-article__title {
+	font-size: 18px;
+}
+
+.blog-article__meta {
+	color: $grey;
+	font-size: 12px;
+}

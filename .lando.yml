@@ -1,0 +1,26 @@
+name: test
+recipe: wordpress
+proxy:
+    appserver:
+        - test.lndo.site
+config:
+    xdebug: true
+    php: "8.0"
+services:
+    phpmyadmin:
+        type: phpmyadmin
+        hosts:
+            - database
+    appserver:
+        config:
+            php: .lando/php.ini
+        build:
+            - cd /app/wp-content/themes/test && composer install
+        overrides:
+            environment:
+                PHP_IDE_CONFIG: "serverName=PHPSTORM"
+    mailhog:
+        type: mailhog
+        portforward: false
+        hogfrom:
+            - appserver

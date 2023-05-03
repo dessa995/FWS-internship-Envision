@@ -1,0 +1,20 @@
+/**
+ * Products
+ */
+ul.products {
+	display: flex;
+	flex-wrap: wrap;
+
+	li.product {
+		position: relative;
+		width: 33%;
+
+		img {
+			display: block;
+		}
+
+		.button {
+			display: block;
+		}
+	}
+}

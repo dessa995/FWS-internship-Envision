@@ -1,0 +1,24 @@
+# ignore log files
+*.log
+
+# ignore compiled files
+dist
+.sass-cache
+style.css
+style.css.map
+dashboard.css
+dashboard.css.map
+login.css
+login.css.map
+.fwsenqueue.yml
+
+# ignore Editor files
+.idea
+.vscode
+index.sublime-workspace
+.sublime-gulp.cache
+
+# ignore node_modules
+node_modules
+vendor
+.env
