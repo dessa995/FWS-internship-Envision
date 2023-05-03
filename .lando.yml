@@ -1,8 +1,8 @@
-name: test
+name: fws-envision
 recipe: wordpress
 proxy:
     appserver:
-        - test.lndo.site
+        - fws-envision.lndo.site
 config:
     xdebug: true
     php: "8.0"
@@ -15,7 +15,7 @@ services:
         config:
             php: .lando/php.ini
         build:
-            - cd /app/wp-content/themes/test && composer install
+            - cd /app/wp-content/themes/fws-envision && composer install
         overrides:
             environment:
                 PHP_IDE_CONFIG: "serverName=PHPSTORM"
