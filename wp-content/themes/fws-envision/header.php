@@ -52,7 +52,6 @@
 							<img class="site-header__logo-img" src="<?php echo fws()->images()->assetsSrc('logo-header.png'); ?>" alt="<?php bloginfo( 'name' ); ?> Logo" title="<?php bloginfo( 'name' ); ?>">
 							<span class="site-header__logo-text">CELEBRATING 10 YEARS!</span>
 						</a>
-
 					</div><!-- site-header__branding -->
 
 					<div class="site-header__nav-outer js-nav-outer">

@@ -52,23 +52,15 @@ const ResponsiveHeaderPosition = {
 				$('.js-pre-header').addClass('is-sticky');
 				$('.js-site-header').addClass('is-sticky');
 				$('.js-site-header').addClass('green');
-				// if ($windowWidth > 580) {
-				// 	$('.js-site-header').css('height', '80px');
-				// } else {
-				// 	$('.js-site-header').css('height', '65px');
-				// }
+				$('.js-site-header').css('height', '50px');
 			} else {
 				$('.js-pre-header').removeClass('is-sticky');
 				$('.js-site-header').removeClass('is-sticky');
-                $('.js-preheader-button').animate({height: 40}, 350);
-
-				// if ($windowWidth > 765) {
-				// 	$('.js-site-header').css('height', '150px');
-				// } else if ($windowWidth < 580) {
-				// 	$('.js-site-header').css('height', '110px');
-				// } else {
-				// 	$('.js-site-header').css('height', '125px');
-				// }
+				if ($windowWidth > 1200) {
+					$('.js-site-header').css('height', '135px');
+				} else {
+					$('.js-site-header').css('height', '105px');
+				}
 			}
 			lastScrollTop = $scrollValue;
 		});

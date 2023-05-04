@@ -31,10 +31,10 @@ a {
 
 	> .menu-item {
 		position: relative;
-		margin-left: 55px;
+		margin-left: 60px;
 
 		&:last-child {
-			margin-right: 20px;
+			margin-right: 19px;
 		}
 
 		// @include mq($xl + 1, 'min') {
@@ -75,6 +75,7 @@ a {
 			position: relative;
 			text-decoration: none;
 			color: $white;
+			letter-spacing: 0.9px;
 			transition: $dur $ease;
 
 			&:hover {
