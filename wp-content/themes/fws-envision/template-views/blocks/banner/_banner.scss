@@ -19,7 +19,7 @@
 	overflow: hidden;
 	object-fit: cover;
 
-	@include mq($sm) {
+	@include mq($md) {
 		min-height: 500px;
 	}
 }
@@ -91,7 +91,7 @@
 -----------------------------------------------------*/
 
 .banner__features {
-	background-color: $green-grey;
+	background-color: $grey-dark;
 	width: 100%;
 }
 

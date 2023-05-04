@@ -1,14 +1,56 @@
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-.copyright {
-	background-color: $black;
-	padding: 25px 15px;
-	text-align: center;
-	line-height: 1.3;
+.sub-footer__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 17px 23px;
 
-	p {
-		color: $white;
-		margin: 0;
+	@include mq($lg) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.site-footer__logo {
+	display: inline-block;
+	max-width: 200px;
+
+	@include mq($sm) {
+		max-width: 160px;
+	}
+}
+
+.sub-footer__copyright-box {
+	display: flex;
+	justify-content: flex-start;
+	padding-right: 160px;
+	padding-top: 11px;
+
+	@include mq($xl) {
+		padding-right: 0;
+	}
+}
+
+.sub-footer__text {
+	color: rgba($white, .5);
+	font-size: 16px;
+	letter-spacing: 0.1px;
+
+	&-fws {
+		color: $green;
+		margin-left: 6px;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	@include mq($lg) {
+		text-align: center;
+	}
+
+	@include mq($sm) {
+		font-size: 13px;
 	}
 }
