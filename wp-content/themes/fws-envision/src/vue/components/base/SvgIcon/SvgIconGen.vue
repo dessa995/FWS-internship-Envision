@@ -6,18 +6,23 @@
 
 <script>
     import startcase from 'lodash.startcase';
+    import 3DLaserScanning from '../../../../assets/svg/ico-3d-laser-scanning.svg';
     import ArrowDown from '../../../../assets/svg/ico-arrow-down.svg';
     import ArrowLeft from '../../../../assets/svg/ico-arrow-left.svg';
     import ArrowRight from '../../../../assets/svg/ico-arrow-right.svg';
     import ArrowUp from '../../../../assets/svg/ico-arrow-up.svg';
     import Bookmark from '../../../../assets/svg/ico-bookmark.svg';
     import Dog from '../../../../assets/svg/ico-dog.svg';
+    import DroneMapping from '../../../../assets/svg/ico-drone-mapping.svg';
     import Happy from '../../../../assets/svg/ico-happy.svg';
     import Instagram from '../../../../assets/svg/ico-instagram.svg';
     import Lock from '../../../../assets/svg/ico-lock.svg';
     import PlusCircle from '../../../../assets/svg/ico-plus-circle.svg';
+    import PreConstructionSurvey from '../../../../assets/svg/ico-pre-construction-survey.svg';
+    import ScanToBim from '../../../../assets/svg/ico-scan-to-bim.svg';
     import Twitter from '../../../../assets/svg/ico-twitter.svg';
     import User from '../../../../assets/svg/ico-user.svg';
+    import VirtualToursAndDigitalTwin from '../../../../assets/svg/ico-virtual-tours-and-digital-twin.svg';
 
     export default {
         props: {
@@ -27,18 +32,23 @@
             }
         },
         components: {
+            3DLaserScanning,
             ArrowDown,
             ArrowLeft,
             ArrowRight,
             ArrowUp,
             Bookmark,
             Dog,
+            DroneMapping,
             Happy,
             Instagram,
             Lock,
             PlusCircle,
+            PreConstructionSurvey,
+            ScanToBim,
             Twitter,
             User,
+            VirtualToursAndDigitalTwin,
 
         },
         computed: {

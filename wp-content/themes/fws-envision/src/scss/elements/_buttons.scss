@@ -3,20 +3,27 @@
 --------------------------------------------------------------*/
 input[type='submit'],
 .btn {
-	display: inline-block;
-	text-align: center;
-	border: 1px solid $black;
-	border-radius: 30px;
-	background-color: $white;
-	color: $black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: $green;
+	color: $white;
 	padding: 5px 10px;
 	outline: none;
-	min-width: 200px;
+	min-width: 238px;
+	height: 80px;
+	letter-spacing: 1.5px;
 	transition: $dur $ease;
 
 	@include hover {
-		background-color: $black;
+		background-color: $green-grey;
 		color: $white;
+	}
+
+	@include mq($lg) {
+		min-width: 200px;
+		height: 60px;
 	}
 }
 

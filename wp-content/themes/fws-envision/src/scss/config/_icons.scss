@@ -6,6 +6,9 @@
 @function svgPath($icon) {
 	$path: '';
 
+	@if $icon == ico-3d-laser-scanning {
+		$path: '../assets/svg/ico-3d-laser-scanning.svg'
+	}
 	@if $icon == ico-arrow-down {
 		$path: '../assets/svg/ico-arrow-down.svg'
 	}
@@ -24,6 +27,9 @@
 	@if $icon == ico-dog {
 		$path: '../assets/svg/ico-dog.svg'
 	}
+	@if $icon == ico-drone-mapping {
+		$path: '../assets/svg/ico-drone-mapping.svg'
+	}
 	@if $icon == ico-happy {
 		$path: '../assets/svg/ico-happy.svg'
 	}
@@ -36,11 +42,20 @@
 	@if $icon == ico-plus-circle {
 		$path: '../assets/svg/ico-plus-circle.svg'
 	}
+	@if $icon == ico-pre-construction-survey {
+		$path: '../assets/svg/ico-pre-construction-survey.svg'
+	}
+	@if $icon == ico-scan-to-bim {
+		$path: '../assets/svg/ico-scan-to-bim.svg'
+	}
 	@if $icon == ico-twitter {
 		$path: '../assets/svg/ico-twitter.svg'
 	}
 	@if $icon == ico-user {
 		$path: '../assets/svg/ico-user.svg'
+	}
+	@if $icon == ico-virtual-tours-and-digital-twin {
+		$path: '../assets/svg/ico-virtual-tours-and-digital-twin.svg'
 	}
 
 	@return $path;

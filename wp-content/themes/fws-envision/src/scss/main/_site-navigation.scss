@@ -23,7 +23,9 @@ a {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 
 	@include mq($xl) {
 		display: block;
@@ -31,7 +33,6 @@ a {
 
 	> .menu-item {
 		position: relative;
-		margin-left: 60px;
 
 		&:last-child {
 			margin-right: 19px;
