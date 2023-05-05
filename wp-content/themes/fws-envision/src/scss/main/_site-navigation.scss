@@ -38,14 +38,6 @@ a {
 			margin-right: 19px;
 		}
 
-		// @include mq($xl + 1, 'min') {
-		// 	margin-left: 20px;
-
-		// 	&:first-child {
-		// 		margin: 0;
-		// 	}
-		// }
-
 		@include mq($xl) {
 			margin: 0 0 5px;
 			padding-bottom: 5px;
@@ -76,7 +68,6 @@ a {
 			position: relative;
 			text-decoration: none;
 			color: $white;
-			letter-spacing: 0.9px;
 			transition: $dur $ease;
 
 			&:hover {

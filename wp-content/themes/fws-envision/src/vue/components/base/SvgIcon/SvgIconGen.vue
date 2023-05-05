@@ -14,6 +14,7 @@
     import Bookmark from '../../../../assets/svg/ico-bookmark.svg';
     import Dog from '../../../../assets/svg/ico-dog.svg';
     import DroneMapping from '../../../../assets/svg/ico-drone-mapping.svg';
+    import Facebook from '../../../../assets/svg/ico-facebook.svg';
     import Happy from '../../../../assets/svg/ico-happy.svg';
     import Instagram from '../../../../assets/svg/ico-instagram.svg';
     import Lock from '../../../../assets/svg/ico-lock.svg';
@@ -40,6 +41,7 @@
             Bookmark,
             Dog,
             DroneMapping,
+            Facebook,
             Happy,
             Instagram,
             Lock,

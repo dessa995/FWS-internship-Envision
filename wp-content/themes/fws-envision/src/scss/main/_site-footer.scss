@@ -1,6 +1,152 @@
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+.footer__container {
+	display: flex;
+	padding: 55px 20px 55px 25px;
+
+	@include mq($lg) {
+		padding: 50px 15px;
+	}
+
+	@include mq($md) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer__contact-box {
+	display: flex;
+	flex-direction: column;
+	max-width: 603px;
+	margin-right: 110px;
+
+	@include mq($lg) {
+		margin-right: 50px;
+	}
+
+	@include mq($md) {
+		align-items: center;
+		margin-right: 0;
+	}
+}
+
+.footer__heading {
+	font-family: $font-main-bold;
+	font-size: 40px;
+	color: $white;
+	line-height: 54px;
+	letter-spacing: 1px;
+	margin: 10px 0 40px;
+
+	@include mq($md) {
+		text-align: center;
+	}
+
+	@include mq($sm) {
+		font-size: 35px;
+	}
+}
+
+.site-nav__list-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@include mq($xl) {
+		& > .menu-item {
+			border-bottom: 0;
+		}
+	}
+
+	@include mq($md) {
+		align-items: center;
+	}
+}
+
+.footer__content {
+	// display: inline;
+	position: relative;
+	color: $white;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+	margin-bottom: 22px;
+	width: fit-content;
+	transition: $dur $ease;
+
+	&-telephone-link {
+		margin-bottom: 22px;
+		letter-spacing: 0.5px;
+	}
+
+	&:hover {
+		color: $green;
+	}
+
+	@include mq($md) {
+		text-align: center;
+	}
+}
+
+.footer__social-links-box {
+	display: flex;
+	margin-top: 25px;
+
+	@include mq($md) {
+		justify-content: space-between;
+	}
+}
+
+.footer__social-link {
+	margin-right: 39px;
+	
+	@include mq($md) {
+		margin-right: 20px;
+
+		&-instagram {
+			margin-right: 0;
+		}
+	}
+}
+
+.footer-icon {
+	color: $white;
+	transition: $dur $ease;
+
+	&__facebook {
+		font-size: 23px;
+	}
+
+	&__instagram {
+		font-size: 25px;
+	}
+
+	&:hover {
+		color: $green;
+	}
+}
+
+.footer-navigation__box {
+	max-width: 280px;
+	min-width: 230px;
+	padding: 20px 7px;
+
+	&.second {
+		margin-left: 85px;
+
+		@include mq($lg) {
+			margin-left: 0;
+		}
+	}
+
+	@include mq($lg) {
+		min-width: 160px;
+	}
+}
+
+/*--------------------------------------------------------------
+## Sub-Footer
+--------------------------------------------------------------*/
 .sub-footer__container {
 	display: flex;
 	justify-content: space-between;

@@ -59,11 +59,11 @@
 							<nav id="site-navigation" class="site-nav">
 								<ul class="site-nav__list">
 									<li class="menu-item">
-										<a href="#">SOLUTIONS</a>
+										<a class="header-nav__link" href="#">SOLUTIONS</a>
 									</li>
 
 									<li class="menu-item menu-item-has-children">
-										<a href="#">ENVISION IN ACTION</a>
+										<a class="header-nav__link" href="#">ENVISION IN ACTION</a>
 										<!-- <ul class="sub-menu">
 											<li class="menu-item">
 												<a href="#">Submenu Item</a>
@@ -85,16 +85,16 @@
 									</li>
 
 									<li class="menu-item">
-										<a href="#">OUR VISION</a>
+										<a class="header-nav__link" href="#">OUR VISION</a>
 									</li>
 									<li class="menu-item">
-										<a href="#">INFOGRAPH</a>
+										<a class="header-nav__link" href="#">INFOGRAPH</a>
 									</li>
 									<li class="menu-item">
-										<a href="#">360° VISION</a>
+										<a class="header-nav__link" href="#">360° VISION</a>
 									</li>
 									<li class="menu-item">
-										<a href="#">CONTACT US</a>
+										<a class="header-nav__link" href="#">CONTACT US</a>
 									</li>
 								</ul><!-- site-nav__list -->
 							</nav><!-- #site-navigation -->
