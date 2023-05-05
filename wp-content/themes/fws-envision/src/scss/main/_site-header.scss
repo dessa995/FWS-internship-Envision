@@ -7,13 +7,14 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	// height: 100px;
+	height: 135px;
 	z-index: 1001;
 	transition: $dur $ease;
 	will-change: transform;
 
 	&.is-sticky {
 		transition: $dur $ease;
+		height: 50px;
 	}
 
 	&.green {
@@ -125,12 +126,11 @@
 	max-width: 160px;
 
 	@include mq($xl) {
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 
 	@include mq($sm) {
 		max-width: 140px;
-		padding-top: 15px;
 	}
 }
 

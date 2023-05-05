@@ -15,6 +15,7 @@ do_action( 'fws_starter_s_before_main_content' );
 
 // get content blocks
 get_template_part( 'template-views/blocks/banner/_fe-banner' );
+get_template_part( 'template-views/blocks/client-list/_fe-client-list' );
 
 // close main content wrappers
 do_action( 'fws_starter_s_after_main_content' );

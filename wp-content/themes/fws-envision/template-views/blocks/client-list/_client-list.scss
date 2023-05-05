@@ -1,0 +1,38 @@
+.client-list {
+    background-color: $grey-light;
+    overflow: hidden;
+}
+
+.clinet-list__container {
+    display: flex;
+    flex-direction: column;
+    padding: 130px 0;
+}
+
+.client-list-heading__box {
+    display: flex;
+    justify-content: center;
+}
+
+.client-list-heading {
+    font-family: $font-main-bold;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: $black;
+    margin-bottom: 80px;
+}
+
+.client-card {
+    max-width: 200px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+// .client-list__slider-logo {
+//     max-width: 190px;
+// }
+
+.slick-list {
+    overflow: visible;
+}

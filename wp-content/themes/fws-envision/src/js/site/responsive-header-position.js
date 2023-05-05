@@ -2,7 +2,7 @@
 const $ = jQuery.noConflict();
 
 /** @description import Global or some other files only if you need them */
-import Global from '../shared/global';
+// import Global from '../shared/global';
 
 'use strict';
 const ResponsiveHeaderPosition = {
@@ -28,53 +28,40 @@ const ResponsiveHeaderPosition = {
 
 	scrollHeader: function() {
 		let lastScrollTop = 0;
-		const $windowWidth = $(window).width();
-		let $headerPosition = $('.js-site-header').offset().top;
+		const $domHeader = $('.js-site-header');
+		const $domPreHeader = $('.js-pre-header');
+		const $headerPosition = $('.js-site-header').offset().top;
+
+		if ($headerPosition !== 0) {
+			$($domHeader).addClass('is-sticky');
+			$($domPreHeader).addClass('is-sticky');
+			$($domHeader).addClass('green');
+		}
 
 		$(window).on('scroll', function() {
-			const $domHeader = $('.js-site-header');
 			const $scrollValue = $(window).scrollTop();
-			console.log('header position', $headerPosition);
-			console.log($scrollValue);
 
-			if ($headerPosition !== 0) {
-				$headerPosition = 0;
-			}
-
-			if($scrollValue > $headerPosition) {
-				$domHeader.addClass('is-sticky');
+			//$domHeader becomes transparent when on top of page with this if/else
+			if($scrollValue <= 0) {
+				$($domHeader).removeClass('is-sticky');
+				$($domHeader).removeClass('green');
 			} else {
-				$domHeader.removeClass('is-sticky');
-				$('.js-site-header').removeClass('green');
+				$($domHeader).addClass('is-sticky');
+				$($domHeader).addClass('green');
 			}
 
+			//$domHeader becomes and remains green everywhere exept on top of page with this if/else
 			if ($scrollValue > lastScrollTop) {
-				$('.js-pre-header').addClass('is-sticky');
-				$('.js-site-header').addClass('is-sticky');
-				$('.js-site-header').addClass('green');
-				$('.js-site-header').css('height', '50px');
+				$($domPreHeader).addClass('is-sticky');
+				$($domHeader).addClass('is-sticky');
+				$($domHeader).addClass('green');
 			} else {
-				$('.js-pre-header').removeClass('is-sticky');
-				$('.js-site-header').removeClass('is-sticky');
-				if ($windowWidth > 1200) {
-					$('.js-site-header').css('height', '135px');
-				} else {
-					$('.js-site-header').css('height', '105px');
-				}
+				$($domPreHeader).removeClass('is-sticky');
+				$($domHeader).removeClass('is-sticky');
 			}
 			lastScrollTop = $scrollValue;
 		});
 	},
-
-	someFunction: function(selector) {
-		/** @description Global.varsWindowWidth; - this variable is called from global.js file */
-		const ww = Global.varsWindowWidth;
-		const something = selector.attr(this.attrExampleDataAttr);
-
-		if (selector.hasClass(this.classExampleShow) && ww > 768) {
-			console.log(something);
-		}
-	}
 };
 
 export default ResponsiveHeaderPosition;

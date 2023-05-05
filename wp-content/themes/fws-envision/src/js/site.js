@@ -18,6 +18,7 @@ import PerfectScroll from './site/perfectScroll';
 import LazyLoading from './site/lazyLoad';
 import LoadMoreBlog from './site/loadMoreBlog';
 import ResponsiveHeaderPosition from './site/responsive-header-position';
+import ClientSlider from './site/client-slider';
 
 /**
  * Init site scripts
@@ -35,4 +36,5 @@ jQuery(function() {
 	LazyLoading.init();
 	LoadMoreBlog.init();
 	ResponsiveHeaderPosition.init();
+	ClientSlider.init();
 });

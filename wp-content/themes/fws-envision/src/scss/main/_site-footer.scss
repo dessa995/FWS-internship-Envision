@@ -44,7 +44,8 @@
 	}
 
 	@include mq($sm) {
-		font-size: 35px;
+		font-size: 30px;
+		line-height: 40px;
 	}
 }
 
