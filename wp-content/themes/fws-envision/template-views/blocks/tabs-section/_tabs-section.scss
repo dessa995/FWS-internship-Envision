@@ -140,6 +140,10 @@
     width: 50%;
     padding-left: 212px;
     padding-top: 29px;
+
+    @include mq($xl) {
+        padding-left: 0;
+    }
 }
 
 .tabs-section__tab-content-lower-box {
@@ -152,6 +156,14 @@
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 80px;
+
+    @include mq($xl) {
+        justify-content: center;
+    }
+
+    @include mq($lg) {
+        justify-content: space-between;
+    }
 }
 
 .tabs-section__tab-content-features-heading {
@@ -166,8 +178,12 @@
     max-width: 150px;
     margin-right: 80px;
 
-    &--first {
-        padding-left: 0;
+    @include mq($lg) {
+        margin-right: 60px;
+    }
+
+    @include mq($md) {
+        margin-right: 0;
     }
 }
 
