@@ -12,15 +12,23 @@
     import ArrowRight from '../../../../assets/svg/ico-arrow-right.svg';
     import ArrowUp from '../../../../assets/svg/ico-arrow-up.svg';
     import Bookmark from '../../../../assets/svg/ico-bookmark.svg';
+    import ConstructionWorker from '../../../../assets/svg/ico-construction-worker.svg';
     import Dog from '../../../../assets/svg/ico-dog.svg';
+    import DrawingOnPaper from '../../../../assets/svg/ico-drawing-on-paper.svg';
     import DroneMapping from '../../../../assets/svg/ico-drone-mapping.svg';
     import Facebook from '../../../../assets/svg/ico-facebook.svg';
     import Happy from '../../../../assets/svg/ico-happy.svg';
+    import Healthcare from '../../../../assets/svg/ico-healthcare.svg';
     import Instagram from '../../../../assets/svg/ico-instagram.svg';
+    import LapTop from '../../../../assets/svg/ico-lap-top.svg';
     import Lock from '../../../../assets/svg/ico-lock.svg';
+    import NeighbourhoodBuilding from '../../../../assets/svg/ico-neighbourhood-building.svg';
+    import PenAndPaper from '../../../../assets/svg/ico-pen-and-paper.svg';
     import PlusCircle from '../../../../assets/svg/ico-plus-circle.svg';
     import PreConstructionSurvey from '../../../../assets/svg/ico-pre-construction-survey.svg';
     import ScanToBim from '../../../../assets/svg/ico-scan-to-bim.svg';
+    import SmallBuilding from '../../../../assets/svg/ico-small-building.svg';
+    import ThumbUp from '../../../../assets/svg/ico-thumb-up.svg';
     import Twitter from '../../../../assets/svg/ico-twitter.svg';
     import User from '../../../../assets/svg/ico-user.svg';
     import VirtualToursAndDigitalTwin from '../../../../assets/svg/ico-virtual-tours-and-digital-twin.svg';
@@ -39,15 +47,23 @@
             ArrowRight,
             ArrowUp,
             Bookmark,
+            ConstructionWorker,
             Dog,
+            DrawingOnPaper,
             DroneMapping,
             Facebook,
             Happy,
+            Healthcare,
             Instagram,
+            LapTop,
             Lock,
+            NeighbourhoodBuilding,
+            PenAndPaper,
             PlusCircle,
             PreConstructionSurvey,
             ScanToBim,
+            SmallBuilding,
+            ThumbUp,
             Twitter,
             User,
             VirtualToursAndDigitalTwin,

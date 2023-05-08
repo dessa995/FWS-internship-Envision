@@ -1,0 +1,25 @@
+.tabs-section {
+    background-color: $grey-light;
+    height: 1143px;
+}
+
+.tabs-section__container {
+    margin: 0 -55px;
+}
+
+.tabs-section__heading-box {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs-section__heading {
+    font-family: $font-main-bold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.green-letter {
+    color: $green;
+}

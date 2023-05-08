@@ -17,7 +17,7 @@
 			<div class="banner__features-box">
 				<div class="banner__feature-card">
 				<!-- <a class="banner__feature-card-link" href="javascript:;"> UNCOMENT IF LINK -->
-					<?php echo fws()->render()->inlineSVG( 'ico-pre-construction-survey', 'banner__feature-card-icon banner__feature-card-icon-survey' ); ?>
+					<?php echo fws()->render()->inlineSVG( 'ico-pre-construction-survey', 'banner__feature-card-icon banner__feature-card-icon--small' ); ?>
 					<span class="banner__feature-card-text">PRE-CONSTRUCTION SURVEY</span>
 				<!-- </a> UNCOMENT IF LINK -->
 				</div>
@@ -41,7 +41,7 @@
 				</div>
 				<div class="banner__feature-card">
 					<!-- <a class="banner__feature-card-link" href="javascript:;"> UNCOMENT IF LINK -->
-					<?php echo fws()->render()->inlineSVG( 'ico-drone-mapping', 'banner__feature-card-icon banner__feature-card-icon-drone' ); ?>
+					<?php echo fws()->render()->inlineSVG( 'ico-drone-mapping', 'banner__feature-card-icon banner__feature-card-icon--small' ); ?>
 						<span class="banner__feature-card-text">DRONE MAPPING</span>
 					<!-- </a> UNCOMENT IF LINK -->
 				</div>
