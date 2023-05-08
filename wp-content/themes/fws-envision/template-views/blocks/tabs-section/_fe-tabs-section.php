@@ -6,16 +6,16 @@
 			</div>
 			<div class="tabs-section__tab-content-wrapper">
 				<div class="tabs-section__tab-divider-box">
-					<div class="tabs-section__tab-divider">
+					<div class="tabs-section__tab-divider js-tab-divider">
 						<?php echo fws()->render()->inlineSVG( 'ico-neighbourhood-building', 'tabs-section__tab-divider-icon tabs-section__tab-divider-icon--first' ); ?>
 						<h3 class="tabs-section__tab-divider-heading">I WANT TO SHOW OFF MY SPACE</h3>
 					</div>
-					<div class="tabs-section__tab-divider">
+					<div class="tabs-section__tab-divider js-tab-divider">
 						<?php echo fws()->render()->inlineSVG( 'ico-drawing-on-paper', 'tabs-section__tab-divider-icon tabs-section__tab-divider-icon--second' ); ?>
 						<h3 class="tabs-section__tab-divider-heading">I WANT TO DOCUMENT MY WORK</h3>
 					</div>
 				</div><!-- tab-section__tab-divider-box -->
-				<div class="tabs-section__tab-content-box">
+				<div class="tabs-section__tab-content-box js-tab-card active">
 					<div class="tabs-section__tab-content-upper-box">
 						<div class="tabs-section__tab-content-text-box">
 							<span class="tabs-section__tab-content-pre-heading">3D Virtual tours</span>
@@ -32,36 +32,42 @@
 					<div class="tabs-section__tab-content-lower-box">
 						<h5 class="tabs-section__tab-content-features-heading">Immersive 3D virtual tours for:</h5>
 						<div class="tabs-section__tab-content-features-box">
-							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-construction-worker', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--first' ); ?>
+							<div class="tabs-section__tab-content-feature-card tabs-section__tab-content-feature-card--first">
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-construction-worker', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--first' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-69.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Retailers</span>
 							</div>
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-healthcare', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--second' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-healthcare', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--second' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-87.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Healthcare</span>
 							</div>
 							<!-- ico-pen-and-paper -->
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-pen-and-paper', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--third' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-pen-and-paper', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--third' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-54.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Event halls</span>
 							</div>
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-lap-top', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--fourth' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-lap-top', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--fourth' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-49.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Showrooms</span>
 							</div>
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-small-building', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--fifth' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-small-building', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--fifth' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-59.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Restaurants</span>
 							</div>
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-thumb-up', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--sixth' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-thumb-up', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--sixth' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-60.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Hospitality</span>
 							</div>
 						</div> <!-- tabs-section__tab-content-features-box -->
 						<a class="tabs-section__tab-content-btn" href="javascript:;">CREATE A 3D VIRTUAL TOUR OF YOUR SPACE</a>
 					</div> <!-- tabs-section__tab-content-lower-box -->
 				</div><!-- tabs-section__tab-content-box -->
-				<div class="tabs-section__tab-content-box">
+				<div class="tabs-section__tab-content-box js-tab-card">
 					<div class="tabs-section__tab-content-upper-box">
 						<div class="tabs-section__tab-content-text-box">
 							<span class="tabs-section__tab-content-pre-heading">Construction photo documentation</span>
@@ -79,11 +85,13 @@
 						<h5 class="tabs-section__tab-content-features-heading">Immersive 3D virtual tours for:</h5>
 						<div class="tabs-section__tab-content-features-box">
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-pre-construction-survey', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--first' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-pre-construction-survey', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--first' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-54.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Retailers</span>
 							</div>
 							<div class="tabs-section__tab-content-feature-card">
-								<?php echo fws()->render()->inlineSVG( 'ico-pen-and-paper', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--second' ); ?>
+								<!-- <//?php echo fws()->render()->inlineSVG( 'ico-pen-and-paper', 'tabs-section__feature-card-icon tabs-section__feature-card-icon--second' ); ?> -->
+								<img class="tabs-section__feature-card-icon" src="<?php echo fws()->images()->assetsSrc('temp/Mask-Group-72.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 								<span class="tabs-section__feature-card-text">Healthcare</span>
 							</div>
 						</div> <!-- tabs-section__tab-content-features-box -->

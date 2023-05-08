@@ -19,6 +19,7 @@ import LazyLoading from './site/lazyLoad';
 import LoadMoreBlog from './site/loadMoreBlog';
 import ResponsiveHeaderPosition from './site/responsive-header-position';
 import ClientSlider from './site/client-slider';
+import TabChanger from './site/tab-changer';
 
 /**
  * Init site scripts
@@ -37,4 +38,5 @@ jQuery(function() {
 	LoadMoreBlog.init();
 	ResponsiveHeaderPosition.init();
 	ClientSlider.init();
+	TabChanger.init();
 });

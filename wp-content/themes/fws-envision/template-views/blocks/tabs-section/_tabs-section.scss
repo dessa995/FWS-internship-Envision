@@ -1,15 +1,18 @@
 .tabs-section {
     background-color: $grey-light;
-    height: 1143px;
+    height: 680px;
 }
 
 .tabs-section__container {
     margin: 0 -55px;
+    position: relative;
+    z-index: 20;
 }
 
 .tabs-section__heading-box {
     display: flex;
     justify-content: center;
+    margin-top: -10px;
 }
 
 .tabs-section__heading {
@@ -17,9 +20,207 @@
     font-size: 50px;
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 40px;
+    margin: 50px 0 45px;
 }
 
 .green-letter {
     color: $green;
 }
+
+.tabs-section__tab-divider-box {
+    display: flex;
+    width: 100%;
+}
+
+.tabs-section__tab-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    background-color: $white;
+    transition: $dur $ease;
+
+    &:hover {
+        background-color: $green-grey;
+        cursor: pointer;
+
+        > .tabs-section__tab-divider-icon {
+            color: $white;
+        }
+
+        > .tabs-section__tab-divider-heading {
+            color: $white;
+        }
+    }
+
+    &.active {
+        background-color: $green;
+
+        > .tabs-section__tab-divider-icon {
+            color: $white;
+        }
+
+        > .tabs-section__tab-divider-heading {
+            color: $white;
+        }
+
+        &:hover {
+            background-color: $green-grey;
+            cursor: pointer;
+        }
+    }
+}
+
+.tabs-section__tab-divider-icon {
+    font-size: 40px;
+    margin-right: 17px;
+    color: $green;
+}
+
+.tabs-section__tab-divider-heading {
+    font-family: $font-main-bold;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: -2px;
+    letter-spacing: 0.5px;
+    color: $green;
+}
+
+.tabs-section__tab-content-box {
+    display: none;
+    flex-direction: column;
+    padding: 80px;
+    padding-top: 50px;
+    width: 100%;
+    background-color: $white;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.tabs-section__tab-content-upper-box {
+    display: flex;
+    width: 100%;
+}
+
+
+.tabs-section__tab-content-text-box {
+    width: 50%;
+}
+
+.tabs-section__tab-content-pre-heading {
+    color: $grey-mid;
+    font-size: 14px;
+}
+
+.tabs-section__tab-content-heading {
+    font-size: 25px;
+    font-family: $font-main-bold;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    color: $grey-dark;
+    margin-bottom: 45px;
+}
+
+.tabs-section__tab-content-heading--small {
+    font-size: 18px;
+    color: $grey-dark;
+    font-family: $font-main-bold;
+    margin-bottom: 10px;
+}
+
+.tabs-section__tab-content-paragraph {
+    font-size: 18px;
+    color: $grey;
+}
+
+.tabs-section__tab-content-img-box {
+    width: 50%;
+    padding-left: 212px;
+    padding-top: 29px;
+}
+
+.tabs-section__tab-content-lower-box {
+    margin-top: -5px;
+}
+
+
+.tabs-section__tab-content-features-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.tabs-section__tab-content-features-heading {
+    font-family: $font-main-bold;
+    font-size: 18px;
+    color: $grey;
+    margin-bottom: 25px;
+}
+
+.tabs-section__tab-content-feature-card {
+    display: flex;
+    max-width: 150px;
+    margin-right: 80px;
+
+    &--first {
+        padding-left: 0;
+    }
+}
+
+.tabs-section__feature-card-icon {
+    max-width: 40px;
+    margin: auto 0;
+    margin-right: 15px;
+}
+
+.tabs-section__feature-card-text {
+    font-size: 18px;
+    color: $grey;
+    margin-top: 8px;
+}
+
+.tabs-section__tab-content-btn {
+    position: relative;
+    display: inline-block;
+    padding: 25px 28px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: $grey-dark;
+    border: 2px solid $green;
+    transition: $dur $ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        width: 50%;
+        height: 80%;
+        border-top: none;
+        border-right: 2px solid $white;
+        border-left: none;
+        border-bottom: 2px solid $white;
+        transition: calc($dur / 2) $ease;
+    }
+
+    &:hover {
+        
+        &::after {
+            top: -2px;
+            border-top: 2px solid $white;
+            border-right: 2px solid $white;
+            border-left: none;
+            border-bottom: none;
+        }
+    }
+}
+
+// .tabs-section__feature-card-icon {
+//     font-size: 40px;
+//     color: $green;
+// }
+
