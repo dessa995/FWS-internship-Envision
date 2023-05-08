@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     padding: 130px 0;
+
+    @include mq($md) {
+        padding: 70px 0;
+    }
 }
 
 .client-list-heading__box {
@@ -20,18 +24,50 @@
     letter-spacing: 1px;
     color: $black;
     margin-bottom: 80px;
+
+    @include mq($md) {
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+}
+
+.client-list__slider-box {
+    margin-top: -10px;
+    padding: 0 40px 0 0;
+
+    @include mq($sm) {
+        padding: 0;
+    }
 }
 
 .client-card {
     max-width: 200px;
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 100px;
     margin-bottom: 10px;
+
+    @include mq($md) {
+        max-width: 180px;
+        margin-right: 50px;
+    }
+
+    &--niraste {
+        max-width: 255px;
+
+        @include mq($md) {
+            max-width: 235px;
+        }
+    }
+
+    &--earth-2 {
+        max-width: 220px;
+        
+        @include mq($md) {
+            max-width: 200px;
+        }
+    }
 }
 
-// .client-list__slider-logo {
-//     max-width: 190px;
-// }
 
 .slick-list {
     overflow: visible;
