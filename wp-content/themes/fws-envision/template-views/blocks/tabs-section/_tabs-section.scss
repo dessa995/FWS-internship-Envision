@@ -7,6 +7,10 @@
     margin: 0 -55px;
     position: relative;
     z-index: 20;
+
+    @include mq(1510px) {
+        margin: 0;
+    }
 }
 
 .tabs-section__heading-box {
@@ -21,11 +25,23 @@
     text-align: center;
     letter-spacing: 1px;
     margin: 50px 0 45px;
+
+    @include mq($lg) {
+        font-size: 40px;
+    }
+
+    @include mq($md) {
+        font-size: 35px;
+    }
 }
 
 .green-letter {
     color: $green;
 }
+
+/*------------------------------------------------- 
+## Tab Divider
+-------------------------------------------------*/
 
 .tabs-section__tab-divider-box {
     display: flex;
@@ -70,12 +86,26 @@
             cursor: pointer;
         }
     }
+
+    @include mq($lg) {
+        padding: 10px 15px;
+    }
+
+    @include mq($md) {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
 }
 
 .tabs-section__tab-divider-icon {
     font-size: 40px;
     margin-right: 17px;
     color: $green;
+
+    @include mq($md) {
+        font-size: 30px;
+    }
 }
 
 .tabs-section__tab-divider-heading {
@@ -85,7 +115,20 @@
     margin-right: -2px;
     letter-spacing: 0.5px;
     color: $green;
+
+    @include mq($lg) {
+        font-size: 18px;
+    }
+
+    @include mq($md) {
+        font-size: 14px;
+        text-align: center;
+    }
 }
+
+/*-------------------------------------------- 
+## Tab Content
+---------------------------------------------*/
 
 .tabs-section__tab-content-box {
     display: none;
@@ -98,16 +141,36 @@
     &.active {
         display: flex;
     }
+
+    @include mq($lg) {
+        padding: 40px 30px;
+    }
+
+    @include mq($md) {
+        padding: 35px 30px;
+    }
 }
 
 .tabs-section__tab-content-upper-box {
     display: flex;
     width: 100%;
+
+    @include mq($lg) {
+        margin-bottom: 15px;
+    }
+
+    @include mq($md) {
+        flex-direction: column;
+    }
 }
 
 
 .tabs-section__tab-content-text-box {
     width: 50%;
+
+    @include mq($md) {
+        width: 100%;
+    }
 }
 
 .tabs-section__tab-content-pre-heading {
@@ -122,6 +185,10 @@
     letter-spacing: 0.5px;
     color: $grey-dark;
     margin-bottom: 45px;
+
+    @include mq($md) {
+        font-size: 20px;
+    }
 }
 
 .tabs-section__tab-content-heading--small {
@@ -129,25 +196,57 @@
     color: $grey-dark;
     font-family: $font-main-bold;
     margin-bottom: 10px;
+
+    @include mq($md) {
+        font-size: 17px;
+    }
 }
 
 .tabs-section__tab-content-paragraph {
     font-size: 18px;
     color: $grey;
+
+    @include mq($lg) {
+        font-size: 16px;
+    }
+
+    @include mq($md) {
+        font-size: 15px;
+    }
 }
 
 .tabs-section__tab-content-img-box {
     width: 50%;
     padding-left: 212px;
     padding-top: 29px;
+    margin: auto 0;
+
+    @include mq(1300px) {
+        padding-left: 106px;
+    }
 
     @include mq($xl) {
         padding-left: 0;
     }
+
+    @include mq($md) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
+
+/*-------------------------------------------
+## Tabs section features
+---------------------------------------------*/
 
 .tabs-section__tab-content-lower-box {
     margin-top: -5px;
+
+    @include mq($md) {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
 }
 
 
@@ -171,6 +270,10 @@
     font-size: 18px;
     color: $grey;
     margin-bottom: 25px;
+
+    @include mq($md) {
+        font-size: 17px;
+    }
 }
 
 .tabs-section__tab-content-feature-card {
@@ -191,12 +294,20 @@
     max-width: 40px;
     margin: auto 0;
     margin-right: 15px;
+
+    @include mq($md) {
+        max-width: 35px;
+    }
 }
 
 .tabs-section__feature-card-text {
     font-size: 18px;
     color: $grey;
     margin-top: 8px;
+
+    @include mq($md) {
+        font-size: 15px;
+    }
 }
 
 .tabs-section__tab-content-btn {
@@ -205,6 +316,7 @@
     padding: 25px 28px;
     font-size: 18px;
     letter-spacing: 0.3px;
+    text-align: center;
     color: $grey-dark;
     border: 2px solid $green;
     transition: $dur $ease;
@@ -220,18 +332,15 @@
         border-right: 2px solid $white;
         border-left: none;
         border-bottom: 2px solid $white;
-        transition: calc($dur / 2) $ease;
+        transition: $dur $ease;
     }
 
     &:hover {
-        
-        &::after {
-            top: -2px;
-            border-top: 2px solid $white;
-            border-right: 2px solid $white;
-            border-left: none;
-            border-bottom: none;
-        }
+        color: $green;
+    }
+
+    @include mq($md) {
+        font-size: 15px;
     }
 }
 
