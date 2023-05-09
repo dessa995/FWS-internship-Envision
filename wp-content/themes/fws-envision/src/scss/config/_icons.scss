@@ -12,14 +12,8 @@
 	@if $icon == ico-arrow-down {
 		$path: '../assets/svg/ico-arrow-down.svg'
 	}
-	@if $icon == ico-arrow-left {
-		$path: '../assets/svg/ico-arrow-left.svg'
-	}
 	@if $icon == ico-arrow-right {
 		$path: '../assets/svg/ico-arrow-right.svg'
-	}
-	@if $icon == ico-arrow-up {
-		$path: '../assets/svg/ico-arrow-up.svg'
 	}
 	@if $icon == ico-bookmark {
 		$path: '../assets/svg/ico-bookmark.svg'

@@ -8,9 +8,7 @@
     import startcase from 'lodash.startcase';
     import 3DLaserScanning from '../../../../assets/svg/ico-3d-laser-scanning.svg';
     import ArrowDown from '../../../../assets/svg/ico-arrow-down.svg';
-    import ArrowLeft from '../../../../assets/svg/ico-arrow-left.svg';
     import ArrowRight from '../../../../assets/svg/ico-arrow-right.svg';
-    import ArrowUp from '../../../../assets/svg/ico-arrow-up.svg';
     import Bookmark from '../../../../assets/svg/ico-bookmark.svg';
     import ConstructionWorker from '../../../../assets/svg/ico-construction-worker.svg';
     import Dog from '../../../../assets/svg/ico-dog.svg';
@@ -43,9 +41,7 @@
         components: {
             3DLaserScanning,
             ArrowDown,
-            ArrowLeft,
             ArrowRight,
-            ArrowUp,
             Bookmark,
             ConstructionWorker,
             Dog,
