@@ -5,7 +5,7 @@
 
 .box-section__background-box {
     position: absolute;
-    width: 99%;
+    width: 100%;
     height: 100%;
     z-index: 2;
 
@@ -23,11 +23,27 @@
     @include mq($xl) {
         padding-top: 400px;
     }
+
+    @include mq($sm) {
+        padding-top: 250px;
+    }
+
+    @include mq(385px) {
+        padding-top: 340px;
+    }
 }
 
 .box-section__heading-box {
     margin-top: 115px;
     margin-bottom: 44px;
+
+    @include mq($xl) {
+        margin-top: 55px;
+    }
+
+    @include mq($sm) {
+        margin-top: 90px;
+    }
 }
 
 .box-section__heading {
@@ -35,11 +51,19 @@
     font-size: 50px;
     letter-spacing: 1.1px;
     color: $grey-light;
+
+    @include mq($md) {
+        font-size: 35px;
+    }
 }
 
 .box-section__box-cards-wrapper {
     padding-right: 25px;
     margin-bottom: 115px;
+
+    @include mq($xl) {
+        padding-right: 25px;
+    }
 }
 
 .box-section__card {
@@ -82,35 +106,43 @@
         // border: 2px solid $green;
         position: relative;
 
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: -2px;
-        //     left: -2px;
-        //     width: 50%;
-        //     height: 100%;
-        //     border-top: 2px solid $green;
-        //     border-bottom: 2px solid $green;
-        //     border-left: 2px solid $green;
-        // }
+        &::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 50%;
+            height: 100%;
+            border-top: 2px solid $green;
+            border-bottom: 2px solid $green;
+            border-left: 2px solid $green;
+        }
 
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     top: -2px;
-        //     right: -2px;
-        //     width: 55%;
-        //     height: 20%;
-        //     border-top: 2px solid $green;
-        //     border-right: 2px solid $green;
-        // }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 55%;
+            height: 20%;
+            border-top: 2px solid $green;
+            border-right: 2px solid $green;
+        }
 
         & .box-section__card-heading  {
             color: $grey-light;
+
+            @include mq($sm) {
+                text-align: center;
+            }
         }
 
         & .box-section__card-text {
             color: $grey-light;
+
+            @include mq($sm) {
+                text-align: center;
+            }
         }
 
         & .btn {
@@ -126,8 +158,26 @@
                 background-color: $white;
                 color: $green-grey;
             }
+
+            @include mq($sm) {
+                min-width: 200px;
+                max-width: none;
+                max-height: 60px;
+                font-size: 15px;
+                margin-top: 20px;
+            }
         }
     }
+
+    @include mq($lg) {
+        height: 330px;
+    }
+
+    @include mq($sm) {
+        height: 250px;
+        padding: 30px;
+    }
+
 }
 
 .box-section__card-background-img-container {
@@ -144,6 +194,21 @@
     & > .box-section__card-background-img {
         position: absolute;
         filter: brightness(50%);
+        min-width: 110%;
+
+        @include center;
+
+        @include mq(1360px) {
+            min-width: 130%;
+        }
+
+        @include mq($xl) {
+            min-width: 106%;
+        }
+
+        @include mq($sm) {
+            min-width: 130%;
+        }
     }
 }
 
@@ -162,6 +227,14 @@
 .box-section__card-icon {
     width: 69px;
     margin-bottom: 30px;
+
+    @include mq($md) {
+        width: 50px;
+    }
+
+    @include mq($sm) {
+        margin-bottom: 20px;
+    }
 }
 
 .box-section__card-heading {
@@ -172,12 +245,23 @@
     margin-bottom: 11px;
     letter-spacing: 0.5px;
     transition: $dur $ease;
+
+    @include mq($md) {
+        font-size: 20px;
+    }
 }
 
 .box-section__card-text {
     font-size: 18px;
     color: $grey;
     transition: $dur $ease;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include mq($md) {
+        font-size: 16px;
+    }
 }
 
 .box-section__card-link {
@@ -191,5 +275,9 @@
         // color: $green;
         margin-left: 15px;
         padding-bottom: 11px;
+    }
+
+    @include mq($md) {
+        font-size: 16px;
     }
 }

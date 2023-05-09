@@ -23,7 +23,7 @@ input[type='submit'],
 
 	@include mq($lg) {
 		min-width: 200px;
-		height: 60px;
+		min-height: 60px;
 	}
 }
 

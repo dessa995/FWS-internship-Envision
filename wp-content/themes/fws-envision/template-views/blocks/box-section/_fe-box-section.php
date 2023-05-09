@@ -1,4 +1,5 @@
 <div class="box-section">
+	<!-- To Do: generate card texts from JSON Placeholder -->
 	<div class="box-section__background-box">
 		<img class="cover-img box-section__background-img" src="<?php echo fws()->images()->assetsSrc('section-background-img'); ?>" alt="background img" >
 	</div>
