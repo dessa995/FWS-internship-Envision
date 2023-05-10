@@ -38,6 +38,15 @@
 	opacity: .7;
 }
 
+.ellipsis-two-lines {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
 // Theming and colors/fonts iterator
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);

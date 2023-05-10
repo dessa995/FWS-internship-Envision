@@ -1,0 +1,216 @@
+.services {
+    background-color: $grey-light;
+    padding: 200px 0 130px;
+
+    @include mq($lg) {
+        padding: 120px 0 50px;
+    }
+}
+
+.services__padding-box {
+    padding: 0 23px;
+}
+
+.services__container {
+    position: relative;
+    padding: 125px;
+    padding-right: 0;
+    padding-bottom: 95px;
+    background-color: $white;
+    border: 2px solid $green;
+    z-index: 1;
+    margin-bottom: 150px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 50%;
+        height: 80%;
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+        z-index: 0;
+    }
+
+    @include mq($xl) {
+        padding-left: 75px;
+    }
+
+    @include mq($lg) {
+        padding: 70px 0 30px;
+        margin-bottom: 75px;
+    }
+
+    @include mq($sm) {
+    padding: 70px 10px 30px;
+    margin-bottom: 15px;
+    }
+}
+
+.services__heading-box {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3px;
+    margin-bottom: 90px;
+
+    @include mq($sm) {
+        margin-bottom: 35px;
+    }
+}
+
+.services__heading {
+    font-family: $font-main-bold;
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    color: $green-grey;
+
+    @include mq($xl) {
+        font-size: 40px;
+    }
+
+    @include mq($md) {
+        text-align: center;
+    }
+
+    @include mq($sm) {
+        font-size: 35px;
+    }
+}
+
+.services__cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include mq($md) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+.services__card {
+    display: flex;
+    width: 330px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+
+    @include mq(1410px) {
+        width: 270px;
+        margin-right: 60px;
+    }
+
+    @include mq($xl) {
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    @include mq($md) {
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+}
+
+.services__card-icon-box {
+    min-width: 60px;
+
+    @include mq($xl) {
+        min-width: 50px;
+    }
+
+    @include mq($md) {
+        min-width: none;
+        width: 50px;
+    }
+}
+
+.services__card-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 235px;
+    margin-left: 32px;
+
+    @include mq(1410px) {
+        max-width: 200px;
+    }
+}
+
+.services__card-text {
+    font-weight: bold;
+    font-family: $font-main-bold;
+    letter-spacing: 1px;
+
+    @include mq($xl) {
+        font-size: 15px;
+    }
+}
+
+.services__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 65px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq($md) {
+        background-size: cover;
+    }
+
+    @include mq($sm) {
+        padding: 40px 10px;
+    }
+}
+
+.services__text-pre-heading {
+    font-family: $font-main-bold;
+    color: $green;
+    font-size: 18px;
+
+    @include mq($lg) {
+        font-size: 17px;
+    }
+
+    @include mq($sm) {
+        font-size: 15px;
+    }
+}
+
+.services__text-heading {
+    font-family: $font-main-bold;
+    font-size: 50px;
+    color: $black;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @include mq($lg) {
+        font-size: 45px;
+    }
+
+    @include mq($sm) {
+        font-size: 35px;
+    }
+}
+
+.services__text-paragraph {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+    width: 99.8%;
+    margin-bottom: 80px;
+
+    @include mq($lg) {
+        font-size: 17px;
+    }
+
+    @include mq($sm) {
+        font-size: 15px;
+        margin-bottom: 60px;
+    }
+}

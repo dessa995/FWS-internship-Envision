@@ -29,7 +29,7 @@
     }
 
     @include mq(385px) {
-        padding-top: 340px;
+        padding-top: 350px;
     }
 }
 
@@ -63,6 +63,10 @@
 
     @include mq($xl) {
         padding-right: 25px;
+    }
+
+    @include mq($md) {
+        margin-bottom: 65px;
     }
 }
 
@@ -193,7 +197,7 @@
 
     & > .box-section__card-background-img {
         position: absolute;
-        filter: brightness(50%);
+        filter: brightness(40%);
         min-width: 110%;
 
         @include center;
@@ -233,6 +237,7 @@
     }
 
     @include mq($sm) {
+        width: 45px;
         margin-bottom: 20px;
     }
 }
@@ -249,18 +254,23 @@
     @include mq($md) {
         font-size: 20px;
     }
+    
+    @include mq($sm) {
+        font-size: 18px;
+    }
 }
 
 .box-section__card-text {
     font-size: 18px;
     color: $grey;
     transition: $dur $ease;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 
     @include mq($md) {
         font-size: 16px;
+    }
+
+    @include mq($sm) {
+        font-size: 15px;
     }
 }
 
@@ -279,5 +289,9 @@
 
     @include mq($md) {
         font-size: 16px;
+    }
+
+    @include mq($sm) {
+        font-size: 15px;
     }
 }
