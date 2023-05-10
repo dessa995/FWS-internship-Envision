@@ -25,7 +25,7 @@
 								Humans are visual beings. Your website could tell them about the magnificence of your showroom, the beautiful items on your shelves, and the elaborate events you plan - or you could show them. Bring them into your world and gain an edge over your competitors.
 							</p>
 						</div>
-						<div class="tabs-section__tab-content-img-box">
+						<div class="tabs-section__tab-content-media-box">
 							<img class="tabs-section__tab-content-img" src="<?php echo fws()->images()->assetsSrc('tab-img-1'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 						</div>
 					</div><!-- tabs-section__tab-content-upper-box -->
@@ -77,7 +77,7 @@
 								Ever wished for X-ray vision? See beyond with detailed documentation of every stage of your project. If a problem ever comes up, you’ll be glad to have detailed photos of all the MEP elements in the walls and ceilings. And did we mention we have a combined 25+ years of experience in the construction industry?
 							</p>
 						</div><!-- tabs-section__tab-content-text-box -->
-						<div class="tabs-section__tab-content-img-box">
+						<div class="tabs-section__tab-content-media-box">
 							<img class="tabs-section__tab-content-img" src="<?php echo fws()->images()->assetsSrc('tab-img-2'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="virtual-guide-video-thumbnail" >
 						</div>
 					</div><!-- tabs-section__tab-content-upper-box -->
