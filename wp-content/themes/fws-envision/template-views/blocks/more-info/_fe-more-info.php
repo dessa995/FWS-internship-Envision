@@ -41,7 +41,7 @@
 				</div>
 				<div class="more-info__cards-column">
 					<div class="more-info__cards-box more-info__cards-box--horizontal">
-						<div class="more-info__card style=" style="background-image: url(<?php echo fws()->images()->assetsSrc('custom-residential'); ?>)">
+						<div class="more-info__card" style="background-image: url(<?php echo fws()->images()->assetsSrc('custom-residential'); ?>)">
 							<h3 class="more-info__card-headnig">Custom Residential</h3>
 							<a class="more-info__card-link" href="javascript:;">
 								See inside
@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class="more-info__cards-box">
-						<div class="more-info__card style=" style="background-image: url(<?php echo fws()->images()->assetsSrc('condominium'); ?>)">
+						<div class="more-info__card" style="background-image: url(<?php echo fws()->images()->assetsSrc('condominium'); ?>)">
 							<h3 class="more-info__card-headnig">Condominium & Multi Family Buildings</h3>
 							<a class="more-info__card-link" href="javascript:;">
 								See inside

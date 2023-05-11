@@ -12,6 +12,9 @@
 	@if $icon == ico-arrow-down {
 		$path: '../assets/svg/ico-arrow-down.svg'
 	}
+	@if $icon == ico-arrow-left {
+		$path: '../assets/svg/ico-arrow-left.svg'
+	}
 	@if $icon == ico-arrow-right {
 		$path: '../assets/svg/ico-arrow-right.svg'
 	}
@@ -59,6 +62,9 @@
 	}
 	@if $icon == ico-pre-construction-survey {
 		$path: '../assets/svg/ico-pre-construction-survey.svg'
+	}
+	@if $icon == ico-quote-right-solid {
+		$path: '../assets/svg/ico-quote-right-solid.svg'
 	}
 	@if $icon == ico-scan-to-bim {
 		$path: '../assets/svg/ico-scan-to-bim.svg'

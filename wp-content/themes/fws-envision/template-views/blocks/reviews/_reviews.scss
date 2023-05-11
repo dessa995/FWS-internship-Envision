@@ -1,0 +1,134 @@
+.reviews {
+    background-color: $grey-light;
+    overflow: hidden;
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    padding: 197px 23px;
+}
+
+.reviews__numbers-boxes-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.reviews__numbers-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 27.48%;
+    height: 41.1vh;
+    padding: 35px;
+    border: 2px solid $green;
+
+    &:nth-of-type(1) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 50%;
+            height: 80%;
+            border-top: 2px solid $grey-light;
+            border-right: 2px solid $grey-light;
+        }
+    }
+
+    &:nth-of-type(2) {
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            width: 50%;
+            height: 80%;
+            border-bottom: 2px solid $grey-light;
+            border-left: 2px solid $grey-light;
+        }
+    }
+
+    &:nth-of-type(3) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 50%;
+            height: 80%;
+            border-top: 2px solid $grey-light;
+            border-left: 2px solid $grey-light;
+        }
+    }
+}
+
+.reviews__number {
+    font-family: $font-default-sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: $grey-dark;
+    line-height: 75px;
+    letter-spacing: 1px;
+    margin-top: -13px;
+}
+
+.review__number-text {
+    font-size: 24px;
+    color: $grey-dark;
+}
+
+.reviews__slider-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__slider-headnig-box {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__slider-heading {
+    font-family: $font-main-bold;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: $black-alt;
+}
+
+.reviews__slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.slick-list {
+    overflow: visible;
+}
+
+.slick-button {
+    box-shadow: 0 0 20px -8px rgba($grey-light, .75);
+    background-color: $white;
+    padding: 5px 20px 15px;
+    border-radius: 100%;
+    font-size: 37px;
+}
+
+.reviews__slider-box {
+    max-width: 750px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__slider-card {
+    align-items: center;
+    max-width: 750px;
+    margin: 0 15px;
+    background-color: $white;
+
+}

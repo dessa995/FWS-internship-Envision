@@ -296,7 +296,8 @@
 
 .tabs-section__tab-content-feature-card {
     display: flex;
-    max-width: 150px;
+    // if long word should break uncomment this and line 333
+    // max-width: 160px;
     margin-right: 80px;
 
     @include mq($lg) {
@@ -328,6 +329,8 @@
     font-size: 18px;
     color: $grey;
     margin-top: 8px;
+    // if long word should break uncomment
+    // overflow-wrap: anywhere; 
 
     @include mq($md) {
         font-size: 15px;

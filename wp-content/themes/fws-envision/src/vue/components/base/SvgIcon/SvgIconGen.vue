@@ -8,6 +8,7 @@
     import startcase from 'lodash.startcase';
     import 3DLaserScanning from '../../../../assets/svg/ico-3d-laser-scanning.svg';
     import ArrowDown from '../../../../assets/svg/ico-arrow-down.svg';
+    import ArrowLeft from '../../../../assets/svg/ico-arrow-left.svg';
     import ArrowRight from '../../../../assets/svg/ico-arrow-right.svg';
     import Bookmark from '../../../../assets/svg/ico-bookmark.svg';
     import ConstructionWorker from '../../../../assets/svg/ico-construction-worker.svg';
@@ -24,6 +25,7 @@
     import PenAndPaper from '../../../../assets/svg/ico-pen-and-paper.svg';
     import PlusCircle from '../../../../assets/svg/ico-plus-circle.svg';
     import PreConstructionSurvey from '../../../../assets/svg/ico-pre-construction-survey.svg';
+    import QuoteRightSolid from '../../../../assets/svg/ico-quote-right-solid.svg';
     import ScanToBim from '../../../../assets/svg/ico-scan-to-bim.svg';
     import SmallBuilding from '../../../../assets/svg/ico-small-building.svg';
     import ThumbUp from '../../../../assets/svg/ico-thumb-up.svg';
@@ -41,6 +43,7 @@
         components: {
             3DLaserScanning,
             ArrowDown,
+            ArrowLeft,
             ArrowRight,
             Bookmark,
             ConstructionWorker,
@@ -57,6 +60,7 @@
             PenAndPaper,
             PlusCircle,
             PreConstructionSurvey,
+            QuoteRightSolid,
             ScanToBim,
             SmallBuilding,
             ThumbUp,
