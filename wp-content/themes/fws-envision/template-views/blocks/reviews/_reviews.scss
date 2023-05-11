@@ -1,12 +1,16 @@
 .reviews {
     background-color: $grey-light;
     overflow: hidden;
+
+    .btn {
+        height: 90px;
+    }
 }
 
 .reviews__container {
     display: flex;
     flex-direction: column;
-    padding: 197px 23px;
+    padding: 197px 23px 150px;
 }
 
 .reviews__numbers-boxes-wrapper {
@@ -90,6 +94,7 @@
 .reviews__slider-headnig-box {
     display: flex;
     justify-content: center;
+    margin-bottom: 43px;
 }
 
 .reviews__slider-heading {
@@ -102,22 +107,73 @@
 .reviews__slider-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 33px;
 }
 
 .slick-list {
     overflow: visible;
 }
 
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 24px 0 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	
+		li {
+			margin: 0 10px;
+		}
+	
+		button {
+			display: block;
+			width: 16px;
+			height: 16px;
+			padding: 0;
+			border: 1px solid $grey-mid;
+			border-radius: 100%;
+			background-color: $white;
+			text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+            padding: 3px;
+            outline: 1px solid $grey-mid;
+            border: 3px solid $white;
+			background-color: $green;
+		}
+	
+}
+
 .slick-button {
-    box-shadow: 0 0 20px -8px rgba($grey-light, .75);
+    position: relative;
+    box-shadow: 0 0 20px 20px rgba($grey-light, .75);
     background-color: $white;
     padding: 5px 20px 15px;
+    color: $grey-dark;
+    border: none;
     border-radius: 100%;
     font-size: 37px;
+    margin-top: -75px;
+    transition: $dur $ease;
+    z-index: 20;
+
+    &-prev {
+        margin-right: -80px;
+    }
+
+    &-next {
+        margin-left: -80px;
+    }
+
+    &:hover {
+        background-color: $green;
+        color: $white;
+    }
 }
 
 .reviews__slider-box {
-    max-width: 750px;
+    max-width: 870px;
 }
 
 .slick-initialized .slick-slide {
@@ -130,5 +186,29 @@
     max-width: 750px;
     margin: 0 15px;
     background-color: $white;
+    padding: 50px;
+    padding-bottom: 45px;
+}
 
+.reviews__slider-card-quote-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.reviews__slider-card-text {
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: $black-alt;
+    margin-bottom: 72px;
+}
+
+.reviews__slider-card-rating {
+    margin-bottom: 15px;
+}
+
+.reviews__slider-card-username {
+    font-family: $font-main-bold;
+    font-size: 18px;
+    color: $black-alt;
 }
