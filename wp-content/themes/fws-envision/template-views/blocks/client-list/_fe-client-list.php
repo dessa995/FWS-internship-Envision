@@ -6,34 +6,34 @@
 			</div>
 			<div class="client-list__slider-box js-client-slider">
 				<div class="client-card client-card--velocity-9">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('velocity-9.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Nirastate" >
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('velocity-9.png'); ?>" title="Logo Nirastate" alt="Client Logo Nirastate" >
 				</div>
 				<div class="client-card client-card--niraste">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('nirastate.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Nirastate">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('nirastate.png'); ?>" title="Logo Nirastate" alt="Client Logo Nirastate">
 				</div>
 				<div class="client-card client-card--earth-2">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('earth-2.0.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Earth-2.0">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('earth-2.0.png'); ?>" title="Logo Earth-2.0" alt="Client Logo Earth-2.0">
 				</div>
 				<div class="client-card client-card--amara">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('amara.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Amara">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('amara.png'); ?>" title="Logo Amara" alt="Client Logo Amara">
 				</div>
 				<div class="client-card client-card--utosia">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('utosia-2.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Utosia">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('utosia-2.png'); ?>" title="Logo Utosia" alt="Client Logo Utosia">
 				</div>
 				<div class="client-card client-card--niraste">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('nirastate.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Nirastate">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('nirastate.png'); ?>" title="Logo Nirastate" alt="Client Logo Nirastate">
 				</div>
 				<div class="client-card client-card--velocity-9">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('velocity-9.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Velocity-9">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('velocity-9.png'); ?>" title="Logo Velocity-9" alt="Client Logo Velocity-9">
 				</div>
 				<div class="client-card client-card--earth-2">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('earth-2.0.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Earth 2.0">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('earth-2.0.png'); ?>" title="Logo Earth 2.0" alt="Client Logo Earth 2.0">
 				</div>
 				<div class="client-card client-card--amara">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('amara.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Amara">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('amara.png'); ?>" title="Logo Amara" alt="Client Logo Amara">
 				</div>
 				<div class="client-card client-card--utosia">
-					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('utosia-2.png'); ?>" title="<?php bloginfo( 'name' ); ?>" alt="Client Logo Utosia">
+					<img class="client-list__slider-logo" src="<?php echo fws()->images()->assetsSrc('utosia-2.png'); ?>" title="Logo Utosia" alt="Client Logo Utosia">
 				</div>
 			</div>
 		</div>

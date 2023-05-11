@@ -78,6 +78,10 @@
     line-height: 75px;
     letter-spacing: 1px;
     margin-top: -13px;
+
+    @include mq(1300px) {
+        font-size: 55px;
+    }
 }
 
 .review__number-text {
@@ -188,6 +192,12 @@
     background-color: $white;
     padding: 50px;
     padding-bottom: 45px;
+    opacity: 0.5;
+    transition: opacity $dur $ease;
+
+    &.slick-active {
+        opacity: 1;
+    }
 }
 
 .reviews__slider-card-quote-icon {

@@ -20,6 +20,7 @@ import LoadMoreBlog from './site/loadMoreBlog';
 import ResponsiveHeaderPosition from './site/responsive-header-position';
 import ClientSlider from './site/client-slider';
 import TabChanger from './site/tab-changer';
+import CountUp from './site/count-up';
 
 /**
  * Init site scripts
@@ -39,4 +40,5 @@ jQuery(function() {
 	ResponsiveHeaderPosition.init();
 	ClientSlider.init();
 	TabChanger.init();
+	CountUp.init();
 });

@@ -1,19 +1,17 @@
-<div class="reviews">
+<div class="reviews js-reviews-container">
 	<div class="container">
 		<div class="reviews__container">
 			<div class="reviews__numbers-boxes-wrapper">
 				<div class="reviews__numbers-box">
-					<div class="reviews__number js-count-up">
-						3,152,458+
-					</div>
+					<div class="reviews__number js-count-up" data-val="3152458">3152458</div>
 					<p class="review__number-text">Square ft scanned</p>
 				</div>
 				<div class="reviews__numbers-box">
-					<div class="reviews__number js-count-up">265+</div>
+					<div class="reviews__number js-count-up" data-val="265">265</div>
 					<p class="review__number-text">Projects documented</p>
 				</div>
 				<div class="reviews__numbers-box">
-					<div class="reviews__number js-count-up">124+</div>
+					<div class="reviews__number js-count-up" data-val="124">124</div>
 					<p class="review__number-text">Happy clients</p>
 				</div>
 			</div> <!-- reviews__numbers-boxes-wrapper  -->
