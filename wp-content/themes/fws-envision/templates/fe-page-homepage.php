@@ -21,6 +21,7 @@ get_template_part( 'template-views/blocks/box-section/_fe-box-section' );
 get_template_part( 'template-views/blocks/services/_fe-services' );
 get_template_part( 'template-views/blocks/more-info/_fe-more-info' );
 get_template_part( 'template-views/blocks/reviews/_fe-reviews' );
+get_template_part( 'template-views/blocks/email-form/_fe-email-form' );
 
 // close main content wrappers
 do_action( 'fws_starter_s_after_main_content' );

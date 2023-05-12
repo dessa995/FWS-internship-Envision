@@ -132,13 +132,13 @@
 	min-width: 230px;
 	padding: 20px 7px;
 
-	&.second {
-		margin-left: 85px;
+	// &.second {
+	// 	margin-left: 85px;
 
-		@include mq($lg) {
-			margin-left: 0;
-		}
-	}
+	// 	@include mq($lg) {
+	// 		margin-left: 0;
+	// 	}
+	// }
 
 	@include mq($lg) {
 		min-width: 160px;

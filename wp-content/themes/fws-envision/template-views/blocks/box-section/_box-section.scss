@@ -81,7 +81,6 @@
     z-index: 1;
 
     &:hover {
-        cursor: pointer;
 
         & .box-section__card-background-img-container {
             opacity: 1;
@@ -101,6 +100,11 @@
 
         & .box-section__card-link {
             color: $white;
+
+            &:hover {
+                cursor: pointer;
+                color: $green;
+            }
         }
     }
 

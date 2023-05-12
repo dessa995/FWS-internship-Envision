@@ -11,12 +11,25 @@
     display: flex;
     flex-direction: column;
     padding: 197px 23px 150px;
+
+    @include mq($lg) {
+        padding: 150px 10px 130px;
+    }
+
+    @include mq($md) {
+        padding: 90px 10px 80px;
+    }
 }
 
 .reviews__numbers-boxes-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 130px;
+
+    @include mq($md) {
+        flex-direction: column;
+        margin-bottom: 55px;
+    }
 }
 
 .reviews__numbers-box {
@@ -68,9 +81,23 @@
             border-left: 2px solid $grey-light;
         }
     }
+
+    @include mq($lg) {
+        width: 31.5%;
+        padding: 20px;
+    }
+
+    @include mq($md) {
+        width: 50%;
+        margin: 10px auto;
+    }
 }
 
-.reviews__number {
+.reviews__numbers-up {
+    display: flex;
+}
+
+.reviews__number, .reviews__number-plus {
     font-family: $font-default-sans-serif;
     font-weight: bold;
     font-size: 60px;
@@ -82,12 +109,26 @@
     @include mq(1300px) {
         font-size: 55px;
     }
+
+    @include mq($xl) {
+        font-size: 35px;
+    }
+
+    @include mq($md) {}
 }
 
 .review__number-text {
     font-size: 24px;
     color: $grey-dark;
+
+    @include mq($xl) {
+        font-size: 17px;
+    }
 }
+
+/*--------------------------------------------
+## Slider
+---------------------------------------------*/
 
 .reviews__slider-box-wrapper {
     display: flex;
@@ -178,6 +219,14 @@
 
 .reviews__slider-box {
     max-width: 870px;
+
+    @include mq($lg) {
+        max-width: 600px;
+    }
+
+    @include mq($sm) {
+        max-width: 320px;
+    }
 }
 
 .slick-initialized .slick-slide {
@@ -198,11 +247,24 @@
     &.slick-active {
         opacity: 1;
     }
+
+    @include mq($lg) {
+        max-width: 520px;
+    }
+
+    @include mq($sm) {
+        padding: 20px;
+        max-width: 320px;
+    }
 }
 
 .reviews__slider-card-quote-icon {
     font-size: 30px;
     margin-bottom: 10px;
+
+    @include mq($sm) {
+        font-size: 25px;
+    }
 }
 
 .reviews__slider-card-text {
@@ -211,14 +273,28 @@
     text-align: center;
     color: $black-alt;
     margin-bottom: 72px;
+
+    @include mq($sm) {
+        font-size: 15px;
+        margin-bottom: 35px;
+        line-height: 25px;
+    }
 }
 
 .reviews__slider-card-rating {
     margin-bottom: 15px;
+
+    @include mq($sm) {
+        max-width: 130px;
+    }
 }
 
 .reviews__slider-card-username {
     font-family: $font-main-bold;
     font-size: 18px;
     color: $black-alt;
+
+    @include mq($sm) {
+        font-size: 16px;
+    }
 }

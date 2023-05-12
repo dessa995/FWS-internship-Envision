@@ -1,0 +1,68 @@
+.email-form {
+    background-color: $green;
+}
+
+.email-form__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 79px 25px;
+
+    @include mq($xl) {
+        padding: 55px 0;
+    }
+
+    @include mq($md) {
+        flex-direction: column;
+    }
+}
+
+.email-form__heading-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    max-width: 50%;
+
+    @include mq($md) {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.email-form__heading {
+    font-size: 40px;
+    letter-spacing: 0.7px;
+    color: $white;
+
+    @include mq($xl) {
+        font-size: 35px;
+    }
+
+    @include mq($sm) {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.email-form__form-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 22px;
+
+    @include mq($md) {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.email-form__input-field {
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 72%;
+}
+
+.email-form__submit {
+    letter-spacing: 3px;
+    min-width: 28%;
+}

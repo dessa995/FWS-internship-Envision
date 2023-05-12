@@ -18,8 +18,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/scanned-box'); ?>"  alt="scanned box" >
-									<h3 class="box-section__card-heading">3D Laser Scanning</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Quick, accurate capture of point cloud data.</p>
+									<h3 class="box-section__card-heading js-box-heading">3D Laser Scanning</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Quick, accurate capture of point cloud data.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -33,8 +33,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/cammera'); ?>" alt="cammera" >
-									<h3 class="box-section__card-heading">360° Photo</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Comprehensive visual coverage from every angle.</p>
+									<h3 class="box-section__card-heading js-box-heading">360° Photo</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Comprehensive visual coverage from every angle.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -48,8 +48,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/resized-img'); ?>" alt="resized img" >
-									<h3 class="box-section__card-heading">Hi-res still shots</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Crystal-clear photos which document every detail.</p>
+									<h3 class="box-section__card-heading js-box-heading">Hi-res still shots</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Crystal-clear photos which document every detail.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -63,8 +63,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/suitcase'); ?>" alt="suitcase" >
-									<h3 class="box-section__card-heading">As-built plan</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Scan to plan on 2D/3D CAD and Revit.</p>
+									<h3 class="box-section__card-heading js-box-heading">As-built plan</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Scan to plan on 2D/3D CAD and Revit.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -78,8 +78,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/falling-box'); ?>" alt="falling box" >
-									<h3 class="box-section__card-heading">Scan to BIM</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Import point cloud data to create 3D models of your space.</p>
+									<h3 class="box-section__card-heading js-box-heading">Scan to BIM</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Import point cloud data to create 3D models of your space.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -93,8 +93,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/floating-box'); ?>" alt="floating box" >
-									<h3 class="box-section__card-heading">Virtual tours</h3>
-									<p class="box-section__card-text ellipsis-two-lines">A digital twin of your space to bring your customers into your world.</p>
+									<h3 class="box-section__card-heading js-box-heading">Virtual tours</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">A digital twin of your space to bring your customers into your world.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>
@@ -108,8 +108,8 @@
 							<div class="box-section__card-content">
 								<div class="box-section__card-text-box">
 									<img class="box-section__card-icon" src="<?php echo fws()->images()->assetsSrc('temp/drone'); ?>" alt="drone" >
-									<h3 class="box-section__card-heading">Drone mapping</h3>
-									<p class="box-section__card-text ellipsis-two-lines">Collect aerial data and create 2D/3D models of your space.</p>
+									<h3 class="box-section__card-heading js-box-heading">Drone mapping</h3>
+									<p class="box-section__card-text js-box-text ellipsis-two-lines">Collect aerial data and create 2D/3D models of your space.</p>
 								</div>
 								<a class="box-section__card-link" href="javascript:;">Find out more <?php echo fws()->render()->inlineSVG( 'ico-arrow-right', 'box-section__card-link-icon' ); ?></a>
 							</div>

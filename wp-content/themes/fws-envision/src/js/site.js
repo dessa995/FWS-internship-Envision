@@ -21,6 +21,7 @@ import ResponsiveHeaderPosition from './site/responsive-header-position';
 import ClientSlider from './site/client-slider';
 import TabChanger from './site/tab-changer';
 import CountUp from './site/count-up';
+import BoxContent from './site/box-section-content-api';
 
 /**
  * Init site scripts
@@ -41,4 +42,5 @@ jQuery(function() {
 	ClientSlider.init();
 	TabChanger.init();
 	CountUp.init();
+	BoxContent.init();
 });

@@ -1,29 +1,10 @@
-/** @description always include jQuery in this manner in every file where jQuery is used */
 const $ = jQuery.noConflict();
-
-/** @description import Global or some other files only if you need them */
 
 'use strict';
 
-/** @description Helper Classes for creating base config options. */
 
 const CountUp = {
-	/**
-	 * @description Cache dom and strings
-	 * @description Please always define selectors, classes and data attributes with the following prefixes
-	 * @type {object}
-	 * @param {jQuery} $dom     for any jQuery selectors    - example: $domMenu: $('.js-menu')
-	 * @param {string} sl       for any string selectors    - example: slMenu: '.js-menu'
-	 * @param {string} class    for any class strings       - example: classActive: 'is-active'
-	 * @param {string} attr     for any attributes strings  - example: attrIndex: 'data-index'
-	 */
 
-
-
-	/**
-	 * @description Initialize
-	 * @example this.someFunction();
-	 */
 
 	$domReviewsContainer: $('.js-reviews-container'),
 	$domNumbers: $('.js-count-up'),
@@ -34,38 +15,63 @@ const CountUp = {
 	},
 
 	countUpAnimate: function() {
+		this.handelIntersectionObserver();
+	},
 
-		const target = document.querySelector('.js-reviews-container');
-
+	handelIntersectionObserver: function() {
 		const options = {
-			root: document.querySelector('.js-reviews-container'),
+			root: document,
 			rootMargin: '0px',
 			threshold: 1.0,
 		};
 
-		const animateNumbers = function() {
-			console.log(target);
-			$(this.$domNumbers).each(function() {
-				$(this)
-					.prop('Counter', 0)
-					.animate({
-						Counter: $(this).text(),
-					},
-					{
-						duration: 4000,
-						easing: 'swing',
-						step: function(now) {
-							now = Number(Math.ceil(now)).toLocaleString('en');
-							$(this).text(now + '+');
-						}
-					});
-			});
+		const targets = document.querySelectorAll('.js-count-up');
+
+		const activeNumber = (target) => {
+			const numObserver = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					// console.log(entry);
+					if (entry.isIntersecting) {
+						this.animateNumbers();
+					}
+				});
+			}, options);
+			numObserver.observe(target);
 		};
 
-		const observer = new IntersectionObserver(animateNumbers, options);
+		targets.forEach(activeNumber);
+	},
 
-		observer.observe(target);
-	}
+	animateNumbers: function() {
+		// $(CountUp.$domNumbers).each(function() {
+		// 	const $this = $(this);
+		// 	console.log($this);
+		// 	jQuery({Counter: 0}).animate({Counter: $this.text()}, {
+		// 		duration: 4000,
+		// 		easing: 'swing',
+		// 		step: function() {
+		// 			$this.text(Math.ceil(this.Counter));
+		// 		}
+		// 	});
+		// });
+
+		$(CountUp.$domNumbers).each(function() {
+			const $this = $(this);
+			$(this)
+				.prop('Counter', 0)
+				.animate({
+					Counter: $($this).text(),
+				},
+				{
+					duration: 6000,
+					easing: 'swing',
+					step: function(now) {
+						now = Number(Math.ceil(now)).toLocaleString('en');
+						$($this).text(now);
+					}
+				});
+		});
+	},
 };
 
 export default CountUp;
