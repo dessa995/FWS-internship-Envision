@@ -5,8 +5,8 @@
 				<h2 class="email-form__heading">Sign up here for exlusive offers</h2>
 			</div>
 			<form class="email-form__form-box">
-				<input type="email" name="email" class="email-form__input-field" placeholder="Enter Your Email">
-				<input type="submit" value="SEND" class="email-form__submit">
+				<input type="email" class="email-form__input-field" name="email" placeholder="Enter Your Email">
+				<input type="submit" class="email-form__submit" value="SEND">
 			</form>
 		</div>
 	</div>

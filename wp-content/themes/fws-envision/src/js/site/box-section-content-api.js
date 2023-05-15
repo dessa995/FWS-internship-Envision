@@ -15,6 +15,8 @@ const BoxContent = {
 
 	$domBoxHeading: $('.js-box-heading'),
 	$domBoxText: $('.js-box-text'),
+	$titleArray: [],
+	$contentArray: [],
 
 
 	/**
@@ -29,11 +31,22 @@ const BoxContent = {
 
 		const response = await fetch('https://jsonplaceholder.typicode.com/posts?id=0&id=1&id=2&id=3&id=4&id=5&id=6&id=7');
 		const data = await response.json();
-		console.log(data);
 
 		data.forEach(post => {
-			console.log(post.title);
+			this.$titleArray.push(post.title);
+			this.$contentArray.push(post.body);
 		});
+
+		const headings = document.querySelectorAll('.js-box-heading');
+		const texts = document.querySelectorAll('.js-box-text');
+
+		for (let i = 0; i < headings.length; i++) {
+			const heading = headings[i];
+			const text = texts[i];
+
+			heading.innerHTML = `<h3 class="box-section__card-heading js-box-heading">${BoxContent.$titleArray[i]}</h3>`;
+			text.innerHTML = `<p class="box-section__card-text js-box-text ellipsis-two-lines">${BoxContent.$contentArray[i]}</p>`;
+		}
 	},
 
 	generateContent: function() {

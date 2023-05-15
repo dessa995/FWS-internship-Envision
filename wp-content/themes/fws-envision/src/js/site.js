@@ -22,6 +22,7 @@ import ClientSlider from './site/client-slider';
 import TabChanger from './site/tab-changer';
 import CountUp from './site/count-up';
 import BoxContent from './site/box-section-content-api';
+import BoxPopup from './site/boxPopup';
 
 /**
  * Init site scripts
@@ -43,4 +44,5 @@ jQuery(function() {
 	TabChanger.init();
 	CountUp.init();
 	BoxContent.init();
+	BoxPopup.init();
 });

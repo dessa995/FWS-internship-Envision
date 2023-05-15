@@ -299,3 +299,32 @@
         font-size: 15px;
     }
 }
+
+.box-section__pop-up {
+    display: none;
+    background-color: $grey-light;
+    padding: 25px;
+    box-shadow: 2px 2px 19px -7px rgba($black, .75);
+    z-index: 999;
+
+    @include center;
+}
+
+.box-section__pop-up-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    font-family: $font-main-bold;
+    max-width: 730px;
+
+    &:hover {
+        cursor: pointer;
+        color: $green;
+    }
+
+}
+
+.box-section__pop-up.active {
+    display: block;
+}
