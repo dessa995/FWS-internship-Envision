@@ -38,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 27.48%;
+    min-width: 27.48%;
     height: 41.1vh;
     padding: 35px;
     border: 2px solid $green;
@@ -85,6 +85,7 @@
     @include mq($lg) {
         width: 31.5%;
         padding: 20px;
+        height: 32.1vh;
     }
 
     @include mq($md) {
@@ -152,6 +153,7 @@
 .reviews__slider-wrapper {
     display: flex;
     align-items: center;
+    position: relative;
     margin-bottom: 33px;
 }
 

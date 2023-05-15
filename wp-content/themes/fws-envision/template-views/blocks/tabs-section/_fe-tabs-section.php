@@ -98,6 +98,7 @@
 						<a class="tabs-section__tab-content-btn" href="javascript:;">GET PHOTO DOCUMENTATION FOR YOUR CONSTRUCTION PROJECT</a>
 					</div> <!-- tabs-section__tab-content-lower-box -->
 				</div>
+				<span class="tabs-section__tab-wrapper-bottom js-tab-bottom">&nbsp;</span>
 			</div><!-- tabs-section__tab-content-wrapper -->
 		</div>
 	</div>

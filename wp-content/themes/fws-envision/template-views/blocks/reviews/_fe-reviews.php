@@ -4,21 +4,21 @@
 			<div class="reviews__numbers-boxes-wrapper">
 				<div class="reviews__numbers-box">
 					<div class="reviews__numbers-up">
-						<div class="reviews__number js-count-up">3152458</div>
+						<div class="reviews__number js-count-up" data-count="3152458">3152458</div>
 						<span class="reviews__number-plus">+</span>
 					</div>
 					<p class="review__number-text">Square ft scanned</p>
 				</div>
 				<div class="reviews__numbers-box">
 					<div class="reviews__numbers-up">
-						<div class="reviews__number js-count-up">265</div>
+						<div class="reviews__number js-count-up" data-count="265">265</div>
 						<span class="reviews__number-plus">+</span>
 					</div>
 					<p class="review__number-text">Projects documented</p>
 				</div>
 				<div class="reviews__numbers-box">
 					<div class="reviews__numbers-up">
-						<div class="reviews__number js-count-up">124</div>
+						<div class="reviews__number js-count-up" data-count="124">124</div>
 						<span class="reviews__number-plus">+</span>
 					</div>
 					<p class="review__number-text">Happy clients</p>

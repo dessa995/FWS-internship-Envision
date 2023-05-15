@@ -138,6 +138,11 @@
 ## Tab Content
 ---------------------------------------------*/
 
+.tabs-section__tab-content-wrapper {
+    position: relative;
+    // margin-bottom: -290px;
+}
+
 .tabs-section__tab-content-box {
     display: none;
     flex-direction: column;
@@ -213,6 +218,7 @@
 .tabs-section__tab-content-paragraph {
     font-size: 18px;
     color: $grey;
+    margin-bottom: 15px;
 
     @include mq($lg) {
         font-size: 16px;
@@ -375,8 +381,9 @@
     }
 }
 
-// .tabs-section__feature-card-icon {
-//     font-size: 40px;
-//     color: $green;
-// }
+.tabs-section__tab-wrapper-bottom {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+}
 

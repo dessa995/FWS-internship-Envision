@@ -36,7 +36,6 @@ const BoxPopup = {
 
 		$(this.$domPopupClose).on('click', function() {
 			callback();
-			console.log('called upon');
 		});
 
 		Global.clickOutsideContainer($(window), BoxPopup.$domPopupBox, BoxPopup.$domPopupClose, callback);

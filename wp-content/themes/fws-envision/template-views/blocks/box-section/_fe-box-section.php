@@ -1,8 +1,4 @@
-<div class="box-section">
-	<!-- To Do: generate card texts from JSON Placeholder -->
-	<div class="box-section__background-box">
-		<img class="cover-img box-section__background-img" src="<?php echo fws()->images()->assetsSrc('section-background-img'); ?>" alt="background img" >
-	</div>
+<div class="box-section"  style="background-image: url(<?php echo fws()->images()->assetsSrc('section-background-img'); ?>)">
 	<div class="container">
 		<div class="box-section__container js-box-container">
 			<div class="box-section__heading-box">
@@ -128,9 +124,11 @@
 			</div><!-- box-section__box-cards-wrapper -->
 			<div class="box-section__pop-up js-popup">
 				<span class="box-section__pop-up-close js-close-popup">X</span>
-				<h3 class="box-section__card-heading ellipsis-two-lines js-popup-heading"></h3>
+				<h3 class="box-section__card-heading js-popup-heading"></h3>
 				<p class="box-section__card-text js-popup-text"></p>
 			</div>
+			<div class="box-section__pop-up-background">&nbsp;</div>
 		</div><!-- box-section__container -->
 	</div><!-- container -->
 </div><!-- .box-section -->
+

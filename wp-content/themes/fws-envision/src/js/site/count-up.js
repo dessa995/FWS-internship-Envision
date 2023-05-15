@@ -45,12 +45,19 @@ const CountUp = {
 	animateNumbers: function() {
 		// $(CountUp.$domNumbers).each(function() {
 		// 	const $this = $(this);
-		// 	console.log($this);
-		// 	jQuery({Counter: 0}).animate({Counter: $this.text()}, {
-		// 		duration: 4000,
-		// 		easing: 'swing',
+		// 	$({Count: $this.text()}).animate({
+		// 		Count: $this.attr('data-count')
+		// 	},
+		// 	{
+		// 		duration: 2000,
+		// 		easing: 'linear',
 		// 		step: function() {
-		// 			$this.text(Math.ceil(this.Counter));
+		// 			$this.text(Math.floor(this.Count));
+		// 		},
+		// 		complete: function() {
+		// 			$this.text(this.Count).css({
+		// 				color: '#000'
+		// 			});
 		// 		}
 		// 	});
 		// });
@@ -60,15 +67,15 @@ const CountUp = {
 			$(this)
 				.prop('Counter', 0)
 				.animate({
-					Counter: $($this).text(),
+					Counter: $this.attr('data-count'),
 				},
 				{
-					duration: 6000,
+					duration: 4000,
 					easing: 'swing',
 					step: function(now) {
 						now = Number(Math.ceil(now)).toLocaleString('en');
 						$($this).text(now);
-					}
+					},
 				});
 		});
 	},
