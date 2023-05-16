@@ -29,18 +29,22 @@ const TabChanger = {
 	switchTabs: function() {
 		$(this.$domDividers[0]).addClass('active');
 
-		$('.js-tab-divider').on('click', function() {
+		$(this.$domDividers).on('click', function() {
 			const tabIndex = $(this).index();
-			$('.js-tab-card').attr('data-aos', 'flip-left');
+			if (tabIndex % 2 === 0) {
+				$(TabChanger.$domTabCards).attr('data-aos', 'flip-right');
+			} else {
+				$(TabChanger.$domTabCards).attr('data-aos', 'flip-left');
+			}
 
-			$('.js-tab-divider').removeClass('active');
+			$(TabChanger.$domDividers).removeClass('active');
 			$(this).addClass('active');
 
-			$('.js-tab-card').removeClass('active');
-			$('.js-tab-card').eq(tabIndex).addClass('active');
-			$('.js-tab-card').eq(tabIndex).removeClass('aos-animate');
+			$(TabChanger.$domTabCards).removeClass('active');
+			$(TabChanger.$domTabCards).eq(tabIndex).addClass('active');
+			$(TabChanger.$domTabCards).eq(tabIndex).removeClass('aos-animate');
 			setTimeout(() => {
-				$('.js-tab-card').eq(tabIndex).addClass('aos-animate');
+				$(TabChanger.$domTabCards).eq(tabIndex).addClass('aos-animate');
 			}, 50);
 
 		});

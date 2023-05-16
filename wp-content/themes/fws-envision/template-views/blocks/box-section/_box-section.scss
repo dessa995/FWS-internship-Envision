@@ -13,21 +13,21 @@
 
 .box-section__container {
     position: relative;
-    padding-top: 300px;
+    padding-top: 339px;
     padding-left: 1.69%;
     z-index: 3;
 
-    @include mq($xl) {
-        padding-top: 400px;
-    }
+//     @include mq($xl) {
+//         padding-top: 400px;
+//     }
 
-    @include mq($sm) {
-        padding-top: 250px;
-    }
+//     @include mq($sm) {
+//         padding-top: 300px;
+//     }
 
-    @include mq(385px) {
-        padding-top: 350px;
-    }
+//     @include mq(385px) {
+//         padding-top: 350px;
+//     }
 }
 
 .box-section__heading-box {

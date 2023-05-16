@@ -1,14 +1,14 @@
 .tabs-section {
     background-color: $grey-light;
-    height: 680px;
+    // height: 680px;
 
-    @include mq($md) {
-        height: 900px;
-    }
+    // @include mq($md) {
+    //     height: 900px;
+    // }
 
-    @include mq($sm) {
-        height: 1200px;
-    }
+    // @include mq($sm) {
+    //     height: 1200px;
+    // }
 }
 
 .tabs-section__container {
@@ -32,7 +32,7 @@
     font-size: 50px;
     text-align: center;
     letter-spacing: 1px;
-    margin: 50px 0 45px;
+    margin: 40px 0 45px;
 
     @include mq($lg) {
         font-size: 40px;
@@ -140,7 +140,7 @@
 
 .tabs-section__tab-content-wrapper {
     position: relative;
-    // margin-bottom: -290px;
+    margin-bottom: -290px;
 }
 
 .tabs-section__tab-content-box {

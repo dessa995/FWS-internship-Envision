@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     padding: 130px 0;
-    // align-items: center;
+    align-items: center;
 
     @include mq($md) {
         padding: 70px 0;
@@ -38,8 +38,7 @@
 
 .client-list__slider-box {
     margin-top: -10px;
-    padding: 0 40px 0 0;
-    // width: 200px;
+    max-width: 1100px;
 
     @include mq($sm) {
         padding: 0;
@@ -47,9 +46,7 @@
 }
 
 .client-card {
-    max-width: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px;
     margin-bottom: 10px;
 
     @include mq($md) {
@@ -58,18 +55,18 @@
     }
 
     &--niraste {
-        max-width: 255px;
+        // max-width: 255px;
 
         @include mq($md) {
-            max-width: 235px;
+            // max-width: 235px;
         }
     }
 
     &--earth-2 {
-        max-width: 220px;
+        // max-width: 220px;
         
         @include mq($md) {
-            min-width: 200px;
+            // min-width: 200px;
         }
     }
 }

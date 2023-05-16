@@ -5,7 +5,7 @@ import 'slick-carousel';
 
 /** @description Helper Classes for creating base config options. */
 class SliderBaseConfig {
-	constructor(slidesToShow = 3, slidesToScroll = 1, speed = 2000, rows = 0) {
+	constructor(slidesToShow = 1, slidesToScroll = 1, speed = 2000, rows = 0) {
 		this.slidesToShow = slidesToShow;
 		this.slidesToScroll = slidesToScroll;
 		this.speed = speed;
@@ -31,6 +31,8 @@ const ClientSlider = {
 			autoplaySpeed: 3000,
 			infinite: true,
 			autoplay: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
 			centerMode: true,
 			variableWidths: true,
 			arrows: false,

@@ -21,7 +21,7 @@ import ResponsiveHeaderPosition from './site/responsive-header-position';
 import ClientSlider from './site/client-slider';
 import TabChanger from './site/tab-changer';
 import CountUp from './site/count-up';
-import BoxSectionPadding from './site/box-section-padding';
+// import BoxSectionPadding from './site/box-section-padding';
 import BoxContent from './site/box-section-content-api';
 import BoxPopup from './site/boxPopup';
 import AOS from 'aos';
@@ -45,7 +45,7 @@ jQuery(function() {
 	ClientSlider.init();
 	TabChanger.init();
 	CountUp.init();
-	BoxSectionPadding.init();
+	// BoxSectionPadding.init();
 	BoxContent.init();
 	BoxPopup.init();
 	AOS.init();
