@@ -28,10 +28,9 @@
 				<div class="reviews__slider-headnig-box">
 					<h2 class="reviews__slider-heading">5 Star Reviews</h2>
 				</div>
-				<!-- Slick Arrow -->
 				<div class="reviews__slider-wrapper">
 					<button class="slick-button slick-button-prev"><?php echo fws()->render()->inlineSVG( 'ico-arrow-left', 'reviews__slider-button-icon' ); ?></button>
-					<div class="reviews__slider-box js-slider">
+					<div class="reviews__slider-box js-slider" data-aos="fade-down" data-aos-duration="800">
 						<div class="reviews__slider-card">
 							<?php echo fws()->render()->inlineSVG( 'ico-quote-right-solid', 'reviews__slider-card-quote-icon' ); ?>
 							<p class="reviews__slider-card-text">"Convallis a cras semper auctor neque vitae tempus. Dolor sed viverra ipsum nunc. Magna fringilla urna porttitor rhoncus. Nunc lobortis mattis aliquam faucibus purus in massa. Malesuada fames ac turpis egestas Maecenas."</p>

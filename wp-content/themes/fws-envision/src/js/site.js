@@ -24,6 +24,7 @@ import CountUp from './site/count-up';
 import BoxSectionPadding from './site/box-section-padding';
 import BoxContent from './site/box-section-content-api';
 import BoxPopup from './site/boxPopup';
+import AOS from 'aos';
 
 /**
  * Init site scripts
@@ -47,4 +48,5 @@ jQuery(function() {
 	BoxSectionPadding.init();
 	BoxContent.init();
 	BoxPopup.init();
+	AOS.init();
 });

@@ -1,7 +1,7 @@
 <div class="services">
 	<div class="container">
 		<div class="services__padding-box">
-			<div class="services__container">
+			<div class="services__container" data-aos="zoom-in" data-aos-duration="800">
 				<div class="services__heading-box">
 					<h2 class="services__heading">Properties We Document</h2>
 				</div>
@@ -81,7 +81,7 @@
 				</div>
 			</div><!-- services__contaienr -->
 		</div> <!-- services__pading-box -->
-		<div class="services__text-box" style="background-image: url(<?php echo fws()->images()->assetsSrc('text-block-background'); ?>)">
+		<div class="services__text-box" style="background-image: url(<?php echo fws()->images()->assetsSrc('text-block-background'); ?>)" data-aos="zoom-in" data-aos-duration="800">
 			<span class="services__text-pre-heading">THE E FACTOR</span>
 			<h3 class="services__text-heading">Envision the benefits</h3>
 			<p class="services__text-paragraph">

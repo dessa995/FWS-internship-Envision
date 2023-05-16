@@ -14,8 +14,7 @@
 	</div><!-- container -->
 	<div class="banner__features">
 			<div class="container">
-				<div class="banner__features-container">
-					<div class="banner__features-box">
+				<div class="banner__features-container" data-aos="fade-right" data-aos-duration="800" data-delay="200">
 						<div class="banner__feature-card">
 						<!-- <a class="banner__feature-card-link" href="javascript:;"> UNCOMENT IF LINK -->
 							<?php echo fws()->render()->inlineSVG( 'ico-pre-construction-survey', 'banner__feature-card-icon banner__feature-card-icon--small' ); ?>
@@ -46,7 +45,6 @@
 								<span class="banner__feature-card-text">DRONE MAPPING</span>
 							<!-- </a> UNCOMENT IF LINK -->
 						</div>
-					</div>	<!-- banner__features-box -->
 				</div> <!-- banner__features-container -->
 			</div><!-- container -->
 	</div><!-- banner__features -->

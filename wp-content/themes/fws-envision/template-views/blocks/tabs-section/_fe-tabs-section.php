@@ -4,7 +4,7 @@
 			<div class="tabs-section__heading-box">
 				<h1 class="tabs-section__heading">What can En<span class="green-letter">v</span>ision do for your business?</h1>
 			</div>
-			<div class="tabs-section__tab-content-wrapper">
+			<div class="tabs-section__tab-content-wrapper" data-aos="zoom-in" data-aos-duration="800" data-delay="200">
 				<div class="tabs-section__tab-divider-box">
 					<div class="tabs-section__tab-divider js-tab-divider">
 						<?php echo fws()->render()->inlineSVG( 'ico-neighbourhood-building', 'tabs-section__tab-divider-icon tabs-section__tab-divider-icon--first' ); ?>

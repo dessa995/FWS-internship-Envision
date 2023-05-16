@@ -31,12 +31,17 @@ const TabChanger = {
 
 		$('.js-tab-divider').on('click', function() {
 			const tabIndex = $(this).index();
+			$('.js-tab-card').attr('data-aos', 'flip-left');
 
 			$('.js-tab-divider').removeClass('active');
 			$(this).addClass('active');
 
 			$('.js-tab-card').removeClass('active');
 			$('.js-tab-card').eq(tabIndex).addClass('active');
+			$('.js-tab-card').eq(tabIndex).removeClass('aos-animate');
+			setTimeout(() => {
+				$('.js-tab-card').eq(tabIndex).addClass('aos-animate');
+			}, 50);
 
 		});
 	},

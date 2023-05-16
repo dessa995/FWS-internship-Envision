@@ -25,8 +25,6 @@ const BoxSectionPadding = {
 			const boxSectionTop = $(BoxSectionPadding.$domBoxSection).offset().top;
 			const padding = tabsBottom - boxSectionTop;
 
-			console.log(Math.round(padding) + 50);
-
 			$(BoxSectionPadding.$domBoxSection).css({'padding-top': (Math.round(padding) + 50) + 'px'});
 
 		}, 800);
