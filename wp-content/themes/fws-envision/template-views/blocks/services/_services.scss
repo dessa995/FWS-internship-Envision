@@ -5,6 +5,10 @@
     @include mq($lg) {
         padding: 120px 0 50px;
     }
+
+    @include mq($sm) {
+        padding: 70px 0 50px;
+    }
 }
 
 .services__padding-box {

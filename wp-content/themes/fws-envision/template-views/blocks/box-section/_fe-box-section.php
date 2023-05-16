@@ -112,7 +112,7 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-6 col-md-6">
-						<div class="box-section__card box-section__card--last" data-aos="zoom-out-right" data-aos-duration="500" data-aos-delay="700">
+						<div class="box-section__card box-section__card--last" data-aos="zoom-out-up" data-aos-duration="500" data-aos-delay="700">
 							<div class="box-section__card-content">
 								<h3 class="box-section__card-heading ellipsis-two-lines">Together, we can see through walls.</h3>
 								<p class="box-section__card-text ellipsis-two-lines">Envision the benefits our team will bring.</p>

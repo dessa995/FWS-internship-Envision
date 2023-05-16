@@ -15,6 +15,10 @@
 	&.is-sticky {
 		transition: $dur $ease;
 		height: 50px;
+
+		@include mq($sm) {
+			height: 40px;
+		}
 	}
 
 	&.green {
@@ -28,6 +32,10 @@
 
 	@include mq($xl) {
 		height: 105px;
+	}
+
+	@include mq($sm) {
+		height: 95px;
 	}
 }
 
@@ -74,17 +82,24 @@
 }
 
 .pre-header__login-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 127px;
-	max-height: 40px;
+	height: 40px;
 	background-color: $green;
 	color: $white;
-	text-align: center;
-	padding: 10px;
 	transition: $dur $ease;
 
 	&:hover {
 		background-color: $white;
 		color: $green-grey;
+	}
+
+	@include mq($sm) {
+		width: 90px;
+		height: 30px;
+		font-size: 14px;
 	}
 }
 /*--------------------------------------------------------------

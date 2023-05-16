@@ -90,8 +90,10 @@
 
     @include mq($md) {
         width: 50%;
+        min-width: 245px;
         margin: 10px auto;
     }
+
 }
 
 .reviews__numbers-up {
@@ -148,6 +150,10 @@
     font-size: 48px;
     letter-spacing: 1px;
     color: $black-alt;
+
+    @include mq($sm) {
+        font-size: 35px;
+    }
 }
 
 .reviews__slider-wrapper {

@@ -54,6 +54,10 @@
 .tabs-section__tab-divider-box {
     display: flex;
     width: 100%;
+
+    @include mq($sm) {
+        flex-wrap: wrap;
+    }
 }
 
 .tabs-section__tab-divider {

@@ -41,6 +41,7 @@
 
 	@include mq($md) {
 		text-align: center;
+		font-size: 35px;
 	}
 
 	@include mq($sm) {
@@ -195,6 +196,10 @@
 
 	@include mq($lg) {
 		text-align: center;
+	}
+
+	@include mq($md) {
+		font-size: 15px;
 	}
 
 	@include mq($sm) {

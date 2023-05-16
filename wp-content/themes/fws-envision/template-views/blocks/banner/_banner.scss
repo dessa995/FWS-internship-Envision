@@ -4,6 +4,10 @@
 .banner {
 	position: relative;
 	margin-top: 40px;
+
+	@include mq($sm) {
+		margin-top: 30px;
+	}
 }
 
 .banner__background-video-container {
